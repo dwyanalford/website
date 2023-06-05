@@ -1,0 +1,50 @@
+.proImage {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.avatar {
+    /* width: 150px;
+    height: 150px; */
+    margin: 0 auto;
+    border-radius: 100px;
+    /* border-color: var(--avatarBorder);
+    border-width: var(--borderWidth);
+    border-style: var(--borderStyle); */
+    /* box-shadow: 12px 1px 16px rgba(0, 0, 0, 0.2); */
+}
+.proImage a {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+.name, .title {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+  /* smaller screen sizes */
+  @media screen and (max-width: 870px) {
+    .avatar {
+        width: 85px;
+        height: 85px;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title {
+        display: none;
+    }
+
+  }

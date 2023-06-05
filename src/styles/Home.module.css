@@ -1,0 +1,71 @@
+/* styles/Home.module.css */
+.section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+.imageContainer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 653px;
+}
+
+.title {
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  padding: 15px;
+  border-radius: 8px;
+ 
+  
+}
+
+.subTitle {
+  font-size: 4em;
+  color: #efefef;
+  line-height: 1.1;
+  width: 550px;
+  /* text-shadow: 1px 1px 3px rgb(0, 0, 0); */
+}
+
+.text {
+  font-size: 2em;
+  color:#efefef;
+  line-height: 1.1;
+  width: 450px;
+}
+
+@media (max-width: 1200px) {
+
+  .subTitle {
+    font-size: 2.5em; /* Decrease font size for smaller screens */
+  }
+
+  .text {
+    font-size: 1.75em; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .subTitle {
+    font-size: 2em; /* Decrease font size for smaller screens */
+  }
+
+  .text {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .subTitle {
+    font-size: 2em; /* Further decrease font size for even smaller screens */
+  }
+
+  .text {
+    font-size: 0.8em; /* Further decrease font size for even smaller screens */
+  }
+}

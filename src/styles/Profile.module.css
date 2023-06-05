@@ -1,0 +1,25 @@
+.profile {
+  display: flex;
+  padding: 50px;
+  padding-top: 50px;
+  min-height: 100vh;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 250px;
+  /* background-color: #f1c40f; */
+  /* min-width: 400px; */
+}
+  
+  /* smaller screen sizes */
+  @media screen and (max-width: 870px) {
+    .profile {
+      margin-left: 150px;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .profile {
+      margin-left: 100px;
+    }
+
+  }

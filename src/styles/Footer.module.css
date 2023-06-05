@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    margin-left: 250px;
+    color: var(--font-color);
+    background-color:var(--BgColorSecondary);
+}
+
+  /* smaller screen sizes */
+  @media screen and (max-width: 870px) {
+    .footer {
+      margin-left: 150px;
+    }
+
+  }
+
+  @media screen and (max-width: 599px) {
+    .footer {
+      margin-left: 100px;
+      padding: 40px;
+    }
+
+  }

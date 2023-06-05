@@ -1,0 +1,69 @@
+    .experience {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-left: 250px;
+      padding: 2rem;
+    }
+    .experience div {
+      width: 500px;
+      height: 650px;
+      margin: 10px;
+      overflow: hidden;
+      padding: 25px;
+      text-align: center;
+      border: 1px solid #e3e4e5;
+      background-color:  var(--BgColorMain);
+      border-radius: 8px;
+    }
+    .experience a {
+      background-color: transparent;
+      color: #4682B4;
+      text-decoration: underline;
+    }
+    .experience img {
+      /* width: 160px;
+      height: 60px; */
+    }
+    .experience ul {
+      text-align: left;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .experience h5 span {
+      padding: 5px;
+      background-color: green;
+      color: white;
+    }
+    @media screen and (max-width: 1406px) {
+      .experience div {
+        width: 800px;
+      }
+    }
+    @media screen and (max-width: 1098px) {
+      .experience div {
+        width: 500px;
+      }
+    }  
+    @media screen and (max-width: 717px) {
+      .experience div {
+        width: 450px;
+        height: auto;
+      }
+      .section {
+        margin-left: 100px;
+      }
+    } 
+    @media screen and (max-width: 599px) {
+      .section {
+        margin-left: 50px;
+      }
+      .experience div {
+        width: 350px;
+      }
+    }  
+    @media screen and (min-width: 950px) {
+      .section {
+        background-color:  var(--BgColorSecondary);
+      }
+    }          

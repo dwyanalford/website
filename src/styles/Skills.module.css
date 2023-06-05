@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin-top: 50px;
+    margin-left: 250px;
+    /* background-color:  var(--BgColorMain); */
+    background-color: var(--BgColorSecondary);
+  }
+
+  .container h2 {
+    text-align: left;
+  }
+  
+  .chartContainer {
+    margin-bottom: 30px;
+  }
+  
+  .category {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 19rem;
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: #cacaca; */
+    border-radius: 8px;
+  }
+  
+  .bar {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: calc(100% / 10 - 0.5rem); */
+    width: 70px;
+    background-color: #3498db;
+    border-radius: 0.25rem;
+    transition: height 0.5s ease;
+    position: relative;
+  }
+  
+  .bar:hover {
+    background-color: #2980b9;
+  }
+
+  .label {
+    position: absolute;
+    bottom: -1rem;
+    font-size: 1rem;
+    color: rgb(32, 32, 32);
+    margin-bottom: 0.5rem;
+    transform: translateY(100%);
+    text-align: center;
+  }
+
+  .label2 {
+    position: absolute;
+    top: -6rem;
+    font-size: 1rem;
+    color: rgb(32, 32, 32);
+    transform: translateY(100%);
+    text-align: center;
+  }
+  
+  .yAxis {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: rgb(32, 32, 32);
+  }
+  
+  .xAxis {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1048px) {
+    .bar {
+      width: 50px;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .container {
+      margin-left: 130px;
+    }
+    .bar{
+      width: 40px;
+    }
+    .bar span {
+      transform: rotate(90deg);
+      text-align: left;
+    }
+    .label2 {
+      top: -4rem;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .container {
+      margin-left: 100px;
+    }
+  }
+  

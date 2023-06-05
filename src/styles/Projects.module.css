@@ -1,0 +1,22 @@
+.videoPlayerContainer {
+    max-width: 600px;
+    /* margin: 0 auto; */
+  }
+  
+  .videoPlayer {
+    width: 100%;
+    height: auto;
+  }
+
+  .videoCaption {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .technologiesUsed {
+    margin-bottom: 40px;
+  }
+
+
+  
