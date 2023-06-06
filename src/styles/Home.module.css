@@ -11,8 +11,30 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.5s ease;
+  position: relative;
   height: 653px;
 }
+
+.imageContainer:hover {
+  transform: scale(1.05);
+}
+
+.imageContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+}
+
+.imageContainer:hover::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 
 .title {
   /* background-color: rgba(0, 0, 0, 0.266); */
@@ -35,7 +57,17 @@
   color:#efefef;
   line-height: 1.1;
   width: 450px;
+  font-weight: bold;
 }
+
+.textBlack {
+  color: black;
+}
+
+.textWhite {
+  color: white;
+}
+
 
 @media (max-width: 1200px) {
 
