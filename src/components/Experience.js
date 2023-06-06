@@ -1,5 +1,5 @@
 // components/Experience.js
-import { Image } from 'next/image';
+import Image from 'next/image';
 import styles from '@/styles/Experience.module.css'
 import experienceData from '@/data/experienceData';
 
@@ -16,16 +16,18 @@ const Experience = () => {
       <div className={styles.experience}>
         {sortedExperienceData.map(({ company, title, workDates, workType, tasks, website, websiteTitle, imgSrc }) => (
           <div key={company}>
-            <Image src={imgSrc} width={160} height={60} />
+            <Image src={imgSrc} width={160} height={60} alt={company} />
             <h2>{company}</h2>
             <h3>{title}</h3>
             <h4>{workDates}</h4>
-            <h5><span>{workType}</span></h5>
-            <ul>
-              {tasks.map((task, index) => (
-                <li key={index}>{task}</li>
-              ))}
-            </ul>
+            <p><span>{workType}</span></p>
+            {tasks && tasks.length > 0 && (
+              <ul>
+                {tasks.map((task, index) => (
+                  <li key={index}>{task}</li>
+                ))}
+              </ul>
+            )}
             <a href={website} target="_blank" rel="noopener noreferrer">{websiteTitle}</a>
           </div>
         ))}
