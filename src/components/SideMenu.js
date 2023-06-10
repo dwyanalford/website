@@ -1,3 +1,4 @@
+//components/SideMenu.js
 import ProImage from '@/components/ProImage';
 import Nav from '@/components/Nav';
 

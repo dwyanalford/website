@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Footer from '@/components/Footer'
-import SideMenu from '@/components/SideMenu'
 import ContainerHero from '@/components/ContainerHero'
 import Home from '@/components/Home'
+import MobileMenu from '@/components/MobileMenu'
 
 export default function HomePage() {
   return (
@@ -16,7 +16,7 @@ export default function HomePage() {
         <meta name="robots" content="index,follow"/>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <SideMenu />
+      <MobileMenu />
       <ContainerHero>
         <Home />
       </ContainerHero>
