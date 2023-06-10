@@ -1,11 +1,16 @@
 //components/Home.js
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from '@/styles/Home.module.css';
 import homeData from '@/data/homeData';
+import { GlobalContext } from '@/context/GlobalState';
 
 const Home = () => {
+  const { state } = useContext(GlobalContext);
+
+  const sectionMargin = state.isMenuOpen ? '275px' : '50px';
+
   return (
-    <div className="dynamicContent">
+    <div className="dynamicContent" style={{ marginLeft: sectionMargin }}>
         {homeData.map((data, index) => (
           <div key={index}>
             <div className={`${styles.section} ${styles.imageContainer}`} style={{ backgroundImage: `url(${data.image})` }}>
@@ -21,4 +26,3 @@ const Home = () => {
 };
 
 export default Home;
-

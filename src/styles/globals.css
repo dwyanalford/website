@@ -1,3 +1,5 @@
+/* styles/global.css */
+
 :root {
 
   /* Background Colors */
@@ -108,6 +110,25 @@
   }
 
   /* -----------------------------   side Menu container */
+
+.menu-icon span {
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 25px;
+  color: #868686;
+}
+
+.menu-icon span:hover {
+  color: #000000;
+}
+.menu-icon span:active {
+  font-size: 55px;
+  color: #868686;
+}
+
+
+
   .side-menu {
     position: fixed;
     top: 0;
@@ -119,10 +140,35 @@
     padding: 20px;
     z-index: 2;
     overflow-y: auto;
-    transform: translateX(0); /* make the element behave like relative */
+    transform: translateX(0); 
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    background-color: var(--BgColorMain);
-  }
+    background-color: #D4DDDF;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  /* additional styling as needed */
+}
+
+
+.menu-enter {
+  transform: translateX(-100%);
+}
+.menu-enter-active {
+  transform: translateX(0);
+  transition: transform 400ms;
+}
+.menu-exit {
+  transform: translateX(0);
+}
+.menu-exit-active {
+  transform: translateX(-100%);
+  transition: transform 400ms;
+}
+
 
   /* -----------------------------   Main Content Container */
   .container-hero {
@@ -147,12 +193,12 @@
     min-height: 0;
     align-content: space-between;
     flex-wrap: wrap;
+    /* margin-left: 275px; */
   }
   .dynamicContent > div {
     background-color: var(--contentBG);
     border: var(--contentBorder);
     border-radius: var(--contentBorderRadius);
-    margin-left: 275px;
     margin-top: 50px;
     margin-bottom: 25px;
     overflow: hidden;

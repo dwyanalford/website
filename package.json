@@ -21,6 +21,7 @@
     "parser": "^0.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-transition-group": "^4.4.5",
     "request": "^2.88.2",
     "xml-js": "^1.6.11",
     "xml2js": "^0.6.0",
