@@ -1,14 +1,17 @@
 // context/GlobalState.js
-
-// using the built-in Context API in React to manage global state of the app
 import React, { createContext, useReducer } from 'react';
 
-const initialState = { isMenuOpen: false };
+const initialState = { 
+  isMenuOpen: false, 
+  isOverlayActive: false  // Add new state variable
+};
 
 function reducer(state, action) {
   switch (action.type) {
     case 'TOGGLE_MENU':
       return { ...state, isMenuOpen: !state.isMenuOpen };
+    case 'TOGGLE_OVERLAY': // Add new action
+      return { ...state, isOverlayActive: !state.isOverlayActive };
     default:
       return state;
   }

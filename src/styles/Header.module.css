@@ -8,9 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
     background-color: #D4DDDF;
-    /* background: linear-gradient(to right, #ffffff, #D4DDDF); */
     z-index: 1000;
 }
 
@@ -34,4 +33,14 @@
     color: #343a40;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* This class will be added to the header when the overlay is active */
+.headerContainer.overlayActive {
+    pointer-events: none; /* Disable all interactions with elements in the header */
+}
+
+.headerContainer.overlayActive .rightSection {
+    pointer-events: auto; /* Enable interactions with elements in the right section, 
+                             so the Contact button can close the overlay */
 }
