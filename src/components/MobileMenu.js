@@ -3,7 +3,7 @@ import { useRef, useEffect, useContext } from 'react';
 import ProImage from '@/components/ProImage';
 import Nav from '@/components/Nav';
 import { CSSTransition } from 'react-transition-group';
-import { GlobalContext } from '../context/GlobalState';  // replace with the actual path
+import { GlobalContext } from '../context/GlobalState';
 
 export default function MobileMenu() {
     const { state, dispatch } = useContext(GlobalContext);
@@ -26,23 +26,28 @@ export default function MobileMenu() {
         };
     }, []);
 
+    if (state.isOverlayActive) {
+        return null; // Don't render the MobileMenu component when the overlay is active
+    }
+
     return (
         <div>
             <div onClick={handleMenuClick} className='menu-icon'>
-                <span>☰</span>  {/* Here we're using a hamburger menu icon as unicode */}
+                <span>☰</span>
             </div>
             <CSSTransition
-              in={state.isMenuOpen}
-              timeout={300}
-              classNames="menu"
-              unmountOnExit
-              nodeRef={menuRef}
+                in={state.isMenuOpen}
+                timeout={300}
+                classNames="menu"
+                unmountOnExit
+                nodeRef={menuRef}
             >
-                <div ref={menuRef} className='mobile-menu'>
+                <div ref={menuRef} className={state.isMenuOpen ? 'mobile-menu' : 'mobile-menu hidden'}>
                     <div onClick={handleMenuClick} className='close-icon'>
-                        <span>&#10005;</span>  {/* Unicode "X" character */}
-                        <span>Close</span>
-                    </div><br/>
+                        <span>&#10005;&nbsp;</span>
+                        <span>close</span>
+                    </div>
+                    <br />
                     <ProImage />
                     <Nav />
                 </div>

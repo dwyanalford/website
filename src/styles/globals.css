@@ -137,16 +137,20 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 250px; 
+  width: 250px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   z-index: 1002;
   overflow-y: auto;
-  transform: translateX(0); 
+  transform: translateX(0);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  background: radial-gradient(circle, rgba(255,255,255,1), rgba(212,221,223,0.7));
   background-color: #D4DDDF;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.hidden {
+  transform: translateX(-100%);
 }
 
 .close-icon {
@@ -172,6 +176,14 @@
   transform: translateX(-100%);
   transition: transform 400ms;
 }
+
+/* -----------------------------   Contact */
+
+/* for disabling pointer events */
+.disable-pointer-events {
+  pointer-events: none;
+}
+
 
 
   /* -----------------------------   Main Content Container */
