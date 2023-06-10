@@ -112,11 +112,16 @@
   /* -----------------------------   side Menu container */
 
 .menu-icon span {
+  position: fixed;
+  left: 30px;
+  top: 15px;
   font-size: 50px;
   font-weight: bold;
   cursor: pointer;
-  padding: 25px;
   color: #868686;
+  z-index: 1001;
+  line-height: 1;
+  /* background-color: #1894b0; */
 }
 
 .menu-icon span:hover {
@@ -127,22 +132,21 @@
   color: #868686;
 }
 
-
-
-  .side-menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 250px; 
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    z-index: 2;
-    overflow-y: auto;
-    transform: translateX(0); 
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    background-color: #D4DDDF;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px; 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1002;
+  overflow-y: auto;
+  transform: translateX(0); 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle, rgba(255,255,255,1), rgba(212,221,223,0.7));
+  background-color: #D4DDDF;
 }
 
 .close-icon {
@@ -194,6 +198,7 @@
     align-content: space-between;
     flex-wrap: wrap;
     /* margin-left: 275px; */
+    margin-top: 50px;
   }
   .dynamicContent > div {
     background-color: var(--contentBG);
