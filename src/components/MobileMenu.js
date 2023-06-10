@@ -38,7 +38,7 @@ export default function MobileMenu() {
               unmountOnExit
               nodeRef={menuRef}
             >
-                <div ref={menuRef} className='side-menu'>
+                <div ref={menuRef} className='mobile-menu'>
                     <div onClick={handleMenuClick} className='close-icon'>
                         <span>&#10005;</span>  {/* Unicode "X" character */}
                         <span>Close</span>
