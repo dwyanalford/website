@@ -1,0 +1,28 @@
+.alert {
+    transition: opacity 500ms ease-in-out;
+    opacity: 0;
+    position: 'fixed';
+    left: '50%';
+    top: '50%';
+    transform: 'translate(-50%, -50%)';
+    padding: '20px';
+    border-radius: '5px';
+}
+
+.alert.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.alert.entered {
+    opacity: 1;
+}
+
+.alert.exited {
+    opacity: 0;
+}

@@ -1,8 +1,9 @@
+// pages/contact.js
 import Head from 'next/head'
 import Footer from '@/components/Footer'
 import SideMenu from '@/components/SideMenu'
 import ContainerHero from '@/components/ContainerHero'
-import Contact from '@/components/ContactUs'
+import Contact from '@/components/Contact'
 
 export default function ContactPage() {
   return (

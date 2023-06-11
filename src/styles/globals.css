@@ -26,7 +26,13 @@
 
 
    /* links */
-  --textLinksColor:  #525252;
+  --textLinksColor: #525252;
+
+  /* placeholder text */
+  --ptc:#868484;
+  --ptcSize:1.2em;
+  --ptcFam: sans-serif;
+  
 
 
   /* border style */
@@ -146,6 +152,7 @@
   transform: translateX(0);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #D4DDDF;
+  background-color: #ffffff;
   transition: transform 0.3s ease-in-out;
 }
 
