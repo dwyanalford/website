@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Footer from '@/components/Footer'
 import ContainerHero from '@/components/ContainerHero'
-import Home from '@/components/Home'
 import Header from '@/components/Header'
 import MobileMenu from '@/components/MobileMenu'
+import Home from '@/components/Home'
 
 export default function HomePage() {
   return (
     <>
-       <Head>
+      <Head>
         <meta charSet="UTF-8" />
         <title>Dwyan Home</title>
         <meta name="description" content="home page of Dwyan Alford portfolio web application" />
@@ -20,7 +20,7 @@ export default function HomePage() {
       <Header/>
       <MobileMenu/>
       <ContainerHero>
-        <Home />
+        <Home/>
       </ContainerHero>
       <Footer />
     </>
