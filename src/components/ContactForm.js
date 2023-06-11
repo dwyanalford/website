@@ -58,7 +58,7 @@ export default function ContactForm() {
           <input type="text" placeholder="Subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
           <textarea placeholder="Details" value={details} onChange={(e) => setDetails(e.target.value)} required />
           <div className={styles.recaptcha}>
-            <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={(value) => setRecaptcha(value)} />
+            <ReCAPTCHA sitekey={NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={(value) => setRecaptcha(value)} />
           </div>
           <button type="submit" className={isButtonDisabled ? "" : styles.active} disabled={isButtonDisabled}>
             {isLoading ? "Sending..." : "Send"}

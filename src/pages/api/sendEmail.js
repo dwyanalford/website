@@ -5,7 +5,7 @@ export default async (req, res) => {
   const { firstName, lastName, email, subject, details, recaptcha } = req.body;
 
   // Verify recaptcha
-  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptcha}`;
+  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${RECAPTCHA_SECRET_KEY}&response=${recaptcha}`;
   const verifyRes = await fetch(verifyUrl, { method: 'POST' });
   const verifyData = await verifyRes.json();
   
@@ -17,14 +17,14 @@ export default async (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'iCloud', // replace with your email service
     auth: {
-      user: process.env.ICLOUD_USER,
-      pass: process.env.ICLOUD_PASSWORD,
+      user: ICLOUD_USER,
+      pass: ICLOUD_PASSWORD,
     },
   });
 
   let mailOptions = {
     from: email,
-    to: process.env.ICLOUD_USER,
+    to: ICLOUD_USER,
     subject: subject,
     text: `${firstName} ${lastName}: ${details}`,
   };
