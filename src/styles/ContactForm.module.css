@@ -12,8 +12,8 @@
   .contactForm input,
   .contactForm textarea {
     padding: 15px 20px;
-    margin: 10px 0;
-    border-radius: 5px;
+    margin: 15px 0;
+    border-radius: 15px;
     border: 1px solid #ccc;
     transition: border 0.3s ease;
     font-size: var(--ptcSize);
@@ -25,16 +25,22 @@
     outline: none;
     border: 1px solid #0070f3;
   }
+
+  .contactForm textarea {
+    height: 150px;
+  }
   
   .contactForm button {
     padding: 10px 20px;
     margin: 20px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #ddd;
     color: #949494;
     transition: background-color 0.3s ease;
     cursor: not-allowed;
+    font-family: var(--ptcFam);
+    font-size: var(--ptcSize);
   }
   
   .contactForm button.active {

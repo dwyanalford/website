@@ -21,16 +21,33 @@
     pointer-events: all;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+        
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .contactContainer {
     position: relative;
     width: auto;
     height: auto;
     padding: 25px;
-    background-color: rgb(245, 245, 245);
+    background-color: #a59f9f;
+    background: radial-gradient(circle, #3c3c3c,  #555555, #f6f3c4);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
     border-radius: 15px;
     transform: translateY(150px);
     transition: transform 0.3s ease-in-out;
 }
+
 
 .overlay.active .contactContainer {
     transform: translateY(0);

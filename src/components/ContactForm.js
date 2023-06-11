@@ -56,7 +56,7 @@ export default function ContactForm() {
           <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
           <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <input type="text" placeholder="Subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
-          <textarea placeholder="Details" value={details} onChange={(e) => setDetails(e.target.value)} required />
+          <textarea placeholder="Message" value={details} onChange={(e) => setDetails(e.target.value)} required />
           <div className={styles.recaptcha}>
             <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={(value) => setRecaptcha(value)} />
           </div>
