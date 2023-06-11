@@ -1,3 +1,4 @@
+// pages/contact.js
 import Head from 'next/head'
 import Footer from '@/components/Footer'
 import SideMenu from '@/components/SideMenu'

@@ -2,6 +2,8 @@
 import { useContext } from 'react';
 import styles from '@/styles/Contact.module.css';
 import { GlobalContext } from '@/context/GlobalState'; 
+import ContactForm from '@/components/ContactForm';
+import Alert from '@/components/Alert';
 
 const Contact = () => {
     const { state, dispatch } = useContext(GlobalContext);
@@ -15,7 +17,8 @@ const Contact = () => {
     return (
         <div className={containerClass} onClick={handleOverlayClick}>
             <div className={contactContainerClass} onClick={e => e.stopPropagation()}>
-                Contact Component
+                <ContactForm />
+                <Alert />
             </div>
         </div>
     );

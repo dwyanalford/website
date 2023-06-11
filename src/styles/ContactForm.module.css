@@ -1,0 +1,83 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color:#ececec;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+    font-size: var(--ptcSize);
+    font-family: var(--ptcFam);
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    outline: none;
+    border: 1px solid #0070f3;
+  }
+  
+  .contactForm button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #949494;
+    transition: background-color 0.3s ease;
+    cursor: not-allowed;
+  }
+  
+  .contactForm button.active {
+    background-color: #0070f3;
+    cursor: pointer;
+  }
+  
+  .contactForm button.active:hover {
+    background-color: #0056b3;
+  }
+  
+  .contactForm .recaptcha {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .contactForm input::placeholder,
+  .contactForm textarea::placeholder {
+    color: var(--ptc);
+  }
+  
+  .contactForm input::-webkit-input-placeholder,
+  .contactForm textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: var(--ptc);
+  }
+  
+  .contactForm input::-moz-placeholder,
+  .contactForm textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--ptc);
+  }
+  
+  .contactForm input:-ms-input-placeholder,
+  .contactForm textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    color: var(--ptc);
+  }
+  
+  .contactForm input:-moz-placeholder,
+  .contactForm textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: var(--ptc);
+  }
+  
