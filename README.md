@@ -1,6 +1,6 @@
 # Portfolio Frontend Application
 
-![Portfolio App](path/images/reademe.jpg)
+![Portfolio App](./images/reademe.jpg)
 
 This is my portfolio website showcasing the projects I have worked on, as well as my skills and work experience.
 
