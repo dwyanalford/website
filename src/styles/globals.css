@@ -22,7 +22,7 @@
     /* content block --- items inside of flexbox */
     --contentBG: #ffffff;
     --contentBorder: 1px solid #e3e4e5;
-    --contentBorderRadius: 8px;
+    --contentBorderRadius: 15px;
 
 
    /* links */
@@ -32,8 +32,6 @@
   --ptc:#868484;
   --ptcSize:1.2em;
   --ptcFam: sans-serif;
-  
-
 
   /* border style */
   --borderColor:  #dfdfdf;
@@ -194,41 +192,48 @@
 
 
   /* -----------------------------   Main Content Container */
-  .container-hero {
+
+  .mainDiv {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
     background-color: var(--BgColorSecondary);
   }
-
-  .section {
+  
+  .item1, .item2, .item3, .item4 {
+    margin: 10px;
     display: flex;
-    padding: 50px;
-    padding-top: 50px;
-    min-height: 100vh;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-left: 250px;
-    /* background-color: var(--BgColorSecondary); */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item1 {
+    flex: 1 0 100%; /* full width */
+  }
+  
+  .item2 {
+    flex: 1 0 50%; /* 50% width */
+  }
+  
+  .item3 {
+    flex: 1 0 33.33%; /* 33.33% width */
+  }
+  
+  .item4 {
+    flex: 1 0 25%; /* 25% width */
   }
 
-  .dynamicContent {
-    display: flex;  
-    justify-content: center;  
-    align-items: center;  
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .dynamicContent > div {
-    background-color: var(--contentBG);
-    border: var(--contentBorder);
-    border-radius: var(--contentBorderRadius);
-    overflow: hidden;
+  .borderDiv {
     padding: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: var(--contentBG);
+    border-radius: var(--contentBorderRadius);
   }
   
+  
+
 
   .dynamicContent h1 {
     text-align: center;

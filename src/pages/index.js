@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Footer from '@/components/Footer'
-import ContainerHero from '@/components/ContainerHero'
 import Header from '@/components/Header'
 import MobileMenu from '@/components/MobileMenu'
+import Content from '@/components/Content'
 import Hero from '@/components/Hero'
+import Footer from '@/components/Footer'
 
 export default function HomePage() {
   return (
@@ -19,9 +19,9 @@ export default function HomePage() {
       </Head>
       <Header/>
       <MobileMenu/>
-      <ContainerHero>
-        <Hero currentPage="Home"/>
-      </ContainerHero>
+      <Content>
+        <Hero pageName="Home" />
+      </Content>
       <Footer />
     </>
   )

@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Footer from '@/components/Footer'
-import ContainerHero from '@/components/ContainerHero'
-import Skills from '@/components/Skills'
 import MobileMenu from '@/components/MobileMenu'
+import Content from '@/components/Content'
 import Hero from '@/components/Hero'
+import Footer from '@/components/Footer'
 
 export default function SkillsPage() {
   return (
@@ -18,10 +17,9 @@ export default function SkillsPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MobileMenu />
-      <ContainerHero>
-        <Hero currentPage="Skills"/>
-        <Skills />
-      </ContainerHero>
+      <Content>
+        <Hero pageName="Skills" />
+      </Content>
       <Footer />
     </>
   )
