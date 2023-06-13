@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Footer from '@/components/Footer'
-import ContainerHero from '@/components/ContainerHero'
-import Header from '@/components/Header'
 import MobileMenu from '@/components/MobileMenu'
+import Content from '@/components/Content'
 import Hero from '@/components/Hero'
+import Footer from '@/components/Footer'
 
 export default function Biography() {
   return (
@@ -17,11 +16,10 @@ export default function Biography() {
         <meta name="robots" content="index,follow"/>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <Header/>
       <MobileMenu/>
-      <ContainerHero>
-        <Hero currentPage="Biography"/>
-      </ContainerHero>
+      <Content>
+        <Hero pageName="Biography" />
+      </Content>
       <Footer />
     </>
   )

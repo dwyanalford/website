@@ -1,5 +1,5 @@
 /* styles/Home.module.css */
-.imageContainer {
+/* .imageContainer {
   position: relative;
   border-radius: var(--contentBorderRadius);
   background-size: cover;
@@ -8,7 +8,27 @@
   transition: all 0.5s ease;
   height: 699px;
   width: 1600px;
+} */
+
+.imageContainer {
+  position: relative;
+  /* border-radius: var(--contentBorderRadius); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s ease;
+  height: 699px;
+  width: 1600px;
+  border-radius: var(--contentBorderRadius);
 }
+
+/* Example media query for screens smaller than 768px. Adjust as necessary. */
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    height: 50vh; /* adjust height for smaller screens */
+  }
+}
+
 
 .imageContainer:hover {
   transform: scale(1.00);
