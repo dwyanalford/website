@@ -1,23 +1,17 @@
 /* styles/Home.module.css */
-.section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 20px;
-  position: relative;
-}
-
 .imageContainer {
+  position: relative;
+  border-radius: var(--contentBorderRadius);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.5s ease;
-  position: relative;
-  height: 653px;
+  height: 699px;
+  width: 1600px;
 }
 
 .imageContainer:hover {
-  transform: scale(1.05);
+  transform: scale(1.00);
 }
 
 .imageContainer::before {
@@ -36,28 +30,21 @@
 }
 
 
+.titles {
+  padding: 75px;
+}
+
 .title {
-  /* background-color: rgba(0, 0, 0, 0.266); */
-  padding: 15px;
-  border-radius: 8px;
- 
-  
+  font-size: 4em;
+  line-height: 1.1;
+  width: 550px;
+  margin-bottom: 10px;
 }
 
 .subTitle {
-  font-size: 4em;
-  color: #efefef;
-  line-height: 1.1;
-  width: 550px;
-  /* text-shadow: 1px 1px 3px rgb(0, 0, 0); */
-}
-
-.text {
   font-size: 2em;
-  color:#efefef;
   line-height: 1.1;
   width: 450px;
-  font-weight: bold;
 }
 
 .textBlack {

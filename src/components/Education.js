@@ -12,7 +12,7 @@ const Education = () => {
       {sortedEducationData.map((item, index) => (
         <div key={index}>
           {/* Add img elements for the school and showcase images if provided */}
-          {item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={100}/>}
+          {item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={100} height={100}/>}
             <h2>{item.school}</h2>
             <h3>{item.title}</h3>
             <h4>{item.startDate} - {item.endDate}</h4>
@@ -20,7 +20,7 @@ const Education = () => {
             <p><strong>Type:</strong> {item.type}</p>
             <p><strong>Location:</strong> {item.location}</p>
             {/* Add img elements for the school and showcase images if provided */}
-          {item.images.showcase && <Image className={styles.educationImages} src={item.images.showcase} alt={`${item.showcase} showcase`} width={500}/>}
+          {item.images.showcase && <Image className={styles.educationImages} src={item.images.showcase} alt={`${item.showcase} showcase`} width={500} height={250}/>}
         </div>
       ))}
     </section>
