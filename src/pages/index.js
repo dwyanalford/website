@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import ContainerHero from '@/components/ContainerHero'
 import Header from '@/components/Header'
 import MobileMenu from '@/components/MobileMenu'
-import Home from '@/components/Home'
+import Hero from '@/components/Hero'
 
 export default function HomePage() {
   return (
@@ -20,7 +20,7 @@ export default function HomePage() {
       <Header/>
       <MobileMenu/>
       <ContainerHero>
-        <Home/>
+        <Hero currentPage="Home"/>
       </ContainerHero>
       <Footer />
     </>

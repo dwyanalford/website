@@ -1,24 +1,26 @@
 import Head from 'next/head'
 import Footer from '@/components/Footer'
-import SideMenu from '@/components/SideMenu'
 import ContainerHero from '@/components/ContainerHero'
-import Profile from '@/components/Profile'
+import Header from '@/components/Header'
+import MobileMenu from '@/components/MobileMenu'
+import Hero from '@/components/Hero'
 
-export default function ProfilePage() {
+export default function Biography() {
   return (
     <>
-       <Head>
+      <Head>
         <meta charSet="UTF-8" />
-        <title>Profile</title>
-        <meta name="description" content="Formal Education of Dwyan Alford" />
+        <title>Dwyan Biography</title>
+        <meta name="description" content="Biography of Dwyan Alford portfolio web application" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Dwyan Alford"></meta>
         <meta name="robots" content="index,follow"/>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <SideMenu />
+      <Header/>
+      <MobileMenu/>
       <ContainerHero>
-        <Profile />
+        <Hero currentPage="Biography"/>
       </ContainerHero>
       <Footer />
     </>

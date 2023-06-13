@@ -7,7 +7,7 @@ import menuLinks from '@/data/menuLinks';
 
 const Nav = () => {
   const router = useRouter(); // Use useRouter
-  const sortedMenuLinks = menuLinks.sort((a, b) => b.text.localeCompare(a.text));
+  const sortedMenuLinks = menuLinks.sort((a, b) => a.text.localeCompare(b.text));
 
   return (
     <nav className={styles.nav}>

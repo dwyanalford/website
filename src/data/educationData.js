@@ -10,7 +10,7 @@ const educationData = [
       location: 'Somerset, England (UK)',
       website: '',
       images: {
-        school: 'images/queensLogo.png',
+        school: '/images/queensLogo.png',
         showcase: ''
       }
     },
@@ -24,8 +24,8 @@ const educationData = [
       location: 'Arlington, Virginia',
       website: '',
       images: {
-        school: 'images/gwuLogo.png',
-        showcase: 'images/dwyanGrad.jpg'
+        school: '/images/gwuLogo.png',
+        showcase: '/images/dwyanGrad.jpg'
       }
     },
     {
@@ -38,7 +38,7 @@ const educationData = [
       location: '100% Remote',
       website: '',
       images: {
-        school: 'images/rev-logo-white.webp',
+        school: '/images/rev-logo-white.webp',
         showcase: ''
       }
     },
@@ -52,7 +52,7 @@ const educationData = [
         location: 'New York, NY',
         website: '',
         images: {
-          school: 'images/nyuLogo.png',
+          school: '/images/nyuLogo.png',
           showcase: ''
         }
       },
