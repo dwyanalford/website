@@ -9,7 +9,7 @@ const Projects = () => {
       {projectsData.map((project, index) => (
         <div key={index} className={styles.wrapper}>
           <div className={`${styles.row} borderDiv`}>
-            <div className={styles.column}>
+            <div className={`${styles.column} ${styles.leftColumn}`}>
               <h1>
                 {project.title}
                 <span className={`button-highlights ${project.buttonColor}`}>

@@ -7,7 +7,7 @@ const projectsData = [
       descriptions: [
         "I built my portfolio website to showcase my skills as a Frontend Web Developer, this is just an informational app for now, so no need for databases or backend servers. Please note, I did import all the data into each page dynamically, fetching data from data files.",
       ],
-      technologies: "NextJS, ReactJS, JavaScript, JSX, Vanilla CSS Flexbox for styling, GIT, Github, Vercel.",
+      technologies: "NextJS, ReactJS, JSX, Node, Vanilla CSS Flexbox for styling, GIT, Github, Vercel.",
       link: "",
       videoId: null,
       caption: null,
@@ -18,7 +18,7 @@ const projectsData = [
       title: "Stacks on Stacks Capstone",
       type: "Team Project",
       buttonColor: "button-green",
-      date: "", // you will fill this out
+      date: "", 
       descriptions: [
         "We tested an e-Commerce app, using BDD with Selenium, Cucumber, and TestNG/Junit for front-end End to End tests. Backend endpoints were tested with Postman. Agile/Scrum methodologies were followed with Trello for sprint management",
       ],
