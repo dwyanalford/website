@@ -3,6 +3,7 @@ import MobileMenu from '@/components/MobileMenu'
 import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
+import Projects from '@/components/Projects'
 
 export default function ProjectsPage() {
   return (
@@ -19,6 +20,7 @@ export default function ProjectsPage() {
       <MobileMenu />
       <Content>
         <Hero pageName="Projects" />
+        <Projects />
       </Content>
       <Footer />
     </>

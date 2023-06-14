@@ -204,19 +204,31 @@
   }
   
   .item1, .item2, .item3, .item4 {
-    margin: 10px;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .item1 {
     flex: 1 0 100%; /* full width */
+    margin: 0;
+    display: flex;
   }
   
   .item2 {
-    flex: 1 0 50%; /* 50% width */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
   }
+  
+  @media (max-width: 767px) {
+    .item2 {
+      flex-basis: 100%;
+    }
+  }
+  
+  
+  
   
   .item3 {
     flex: 1 0 33.33%; /* 33.33% width */
