@@ -31,7 +31,7 @@ const Projects = () => {
               )}
             </div>
 
-            <div className={styles.column}>
+            <div className={`${styles.column} ${styles.rightColumn}`}>
               {project.videoSrc ? (
                 <VideoPlayer videoSrc={project.videoId} caption={project.caption} />
               ) : (
@@ -39,14 +39,14 @@ const Projects = () => {
                   src={project.backupImage}
                   alt="Backup Image"
                   className={styles.backupImage}
-                  style={{ height: 'auto', width: '600px' }}
+                  style={{ height: 'auto', width: '100%' }}
                 />
               )}
 
-              <h3>Technologies Used:</h3>
-              <h4>{project.technologies}</h4>
+              <h3 className={styles.centered}>Technologies Used:</h3>
+              <h4 className={styles.centered}>{project.technologies}</h4>
               <div className={styles.buttonContainer}>
-                <a className="button-blue" href={project.link}>VIEW CODE BASE ON GITHUB</a>
+                <a className={`button-blue ${styles.centered}`} href={project.link}>VIEW CODE BASE ON GITHUB</a>
               </div>
             </div>
           </div>
