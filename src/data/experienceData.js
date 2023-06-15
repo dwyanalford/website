@@ -12,8 +12,9 @@ const experienceData = [
         'Develop and maintain comprehensive test plans, test cases, and other testing documentation to ensure test coverage and accuracy.',
       ],
       website: 'https://revature.com/',
-      websiteTitle: 'Revature Website',
-      imgSrc: '/images/revature.jpg',
+      websiteTitle: 'Visit Revature Website',
+      imgSrc: '/images/website-revature.jpg',
+      alt: 'Revature screenshot of website home page in 2023',
     },
     {
         company: 'Institute for Public Private Partnerships(IP3)',
@@ -27,8 +28,9 @@ const experienceData = [
           'Troubleshoot and debug issues with the website, ensuring they are resolved in a timely and efficient manner. Perform regular updates and maintenance to the website, ensuring it is running smoothly and efficiently.',
         ],
         website: 'https://www.ip3.org/',
-        websiteTitle: 'IP3 Website',
-        imgSrc: '/images/ip3.jpg',
+        websiteTitle: 'Visit IP3 Website',
+        imgSrc: '/images/website-ip3.jpg',
+        alt: 'IP3 screenshot of website home page in 2023',
       },
       {
         company: 'Wax and Oils',
@@ -41,8 +43,9 @@ const experienceData = [
           'Monitor website performance and analytics, identifying areas for improvement and implementing solutions to enhance user experience and increase conversion rates.',
         ],
         website: 'https://waxandoils.com/',
-        websiteTitle: 'Wax and Oils Website',
-        imgSrc: '/images/waxoils.jpg',
+        websiteTitle: 'Visit Wax and Oils Website',
+        imgSrc: '/images/website-waxoils.jpg',
+        alt: 'Wax and Oils company screenshot of website home page in 2023',
       },
       {
         company: 'Care Team Health',
@@ -57,8 +60,9 @@ const experienceData = [
           'Develop and implement strategies for website growth and user engagement, including email marketing, social media, and other digital marketing initiatives.',
         ],
         website: 'https://careteamhealth.com/',
-        websiteTitle: 'CareTeam Health Website',
-        imgSrc: '/images/careteam.jpg',
+        websiteTitle: 'Visit CareTeam Health Website',
+        imgSrc: '/images/website-careteam.jpg',
+        alt: 'Careteam Health company screenshot of website home page in 2023',
       },
   ];
   

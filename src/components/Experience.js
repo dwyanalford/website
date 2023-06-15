@@ -1,5 +1,4 @@
 // components/Experience.js
-import Image from 'next/image';
 import styles from '@/styles/Experience.module.css'
 import experienceData from '@/data/experienceData';
 
@@ -10,30 +9,39 @@ const Experience = () => {
     const bYear = parseInt(b.workDates.slice(-4));
     return bYear - aYear;
   });
-
+  
   return (
-    <section className={styles.section}>
-      <div className={styles.experience}>
-        {sortedExperienceData.map(({ company, title, workDates, workType, tasks, website, websiteTitle, imgSrc }) => (
-          <div key={company}>
-            <Image src={imgSrc} width={160} height={60} alt={company} />
-            <h2>{company}</h2>
-            <h3>{title}</h3>
-            <h4>{workDates}</h4>
-            <p><span>{workType}</span></p>
-            {tasks && tasks.length > 0 && (
-              <ul>
-                {tasks.map((task, index) => (
-                  <li key={index}>{task}</li>
-                ))}
-              </ul>
-            )}
-            <a href={website} target="_blank" rel="noopener noreferrer">{websiteTitle}</a>
+    <>
+      {sortedExperienceData.map((exp, index) => (
+        <div key={index} className={styles.wrapper}>
+          <div className={`${styles.row} borderDiv`}>
+          <div className={`${styles.column} ${styles.leftColumn}`}>
+          <h1>{exp.title}</h1>
+          <h2>Company: {exp.company}</h2>
+          <h4>{exp.workType}</h4>
+          <h3>Tasks:</h3>
+          <ul>
+            {exp.tasks.map((task, index) => (
+              <li key={index}>{task}</li>
+            ))}
+          </ul>
+        </div>
+            <div className={`${styles.column} ${styles.rightColumn}`}>
+              <img
+                src={exp.imgSrc}
+                alt={exp.alt}
+                className={styles.backgroundImage}
+              />
+              <div className={styles.buttonContainer}>
+                <a href={exp.website} className={`button-blue ${styles.centered}`} target="_blank" rel="noopener noreferrer">
+                  {exp.websiteTitle}
+                </a>
+              </div>
+            </div>
           </div>
-        ))}
-      </div>
-      {/* ... (Keep the existing styles) */}
-    </section>
+        </div>
+      ))}
+    </>
   );
 };
 

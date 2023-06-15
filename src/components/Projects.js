@@ -41,6 +41,7 @@ const Projects = () => {
                   className={styles.backupImage}
                   style={{ height: 'auto', width: '100%' }}
                 />
+                
               )}
 
               <h3 className={styles.centered}>Technologies Used:</h3>
