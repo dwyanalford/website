@@ -18,8 +18,10 @@ const Experience = () => {
           <div className={`${styles.column} ${styles.leftColumn}`}>
           <h1>{exp.title}</h1>
           <h2>Company: {exp.company}</h2>
-          <h4>{exp.workType}</h4>
+          <h4>{exp.workDates}</h4>
+          <h4>Type of work:{exp.workType}</h4>
           <h3>Tasks:</h3>
+          <h4>Type of work:&nbsp;{exp.workType}</h4>
           <ul>
             {exp.tasks.map((task, index) => (
               <li key={index}>{task}</li>
