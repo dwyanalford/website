@@ -11,7 +11,7 @@ const educationData = [
       website: '',
       images: {
         school: '/images/queensLogo.png',
-        showcase: ''
+        showcase: '/images/education-queens.jpg'
       }
     },
     {
@@ -25,7 +25,7 @@ const educationData = [
       website: '',
       images: {
         school: '/images/gwuLogo.png',
-        showcase: '/images/dwyanGrad.jpg'
+        showcase: '/images/education-gwu.jpg'
       }
     },
     {
@@ -39,7 +39,7 @@ const educationData = [
       website: '',
       images: {
         school: '/images/rev-logo-white.webp',
-        showcase: ''
+        showcase: '/images/education-revature.jpg'
       }
     },
     {
@@ -53,7 +53,7 @@ const educationData = [
         website: '',
         images: {
           school: '/images/nyuLogo.png',
-          showcase: ''
+          showcase: '/images/education-nyu.jpg'
         }
       },
   ];

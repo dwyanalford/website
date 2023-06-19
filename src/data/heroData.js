@@ -30,9 +30,9 @@ const heroData = [
           tablet: { ...tablet, url: "/images/education-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/education-image-mobile.jpg" },
         },
-        title: "Education is the Backbone of Success",
-        subTitle: "My Educational Background.",
-        color: "black",
+        title: "GWU Coding Bootcamp",
+        subTitle: "Foundational step to learn building full stack apps in 2017",
+        color: "white",
         text: ""
       },
     ],
