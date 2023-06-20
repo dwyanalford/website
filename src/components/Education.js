@@ -11,16 +11,18 @@ const Education = () => {
     <>
       {sortedEducationData.map((item, index) => (
         <div key={index} className={styles.wrapper}>
-          <div className={`${styles.row} borderDiv`} style={{ backgroundImage: `url(${item.images.showcase})` }}>
-            <div className={`${styles.column} ${styles.leftColumn}`}>
-              {item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={100} height={100}/>}
-              <h2>{item.school}</h2>
-              <h3>{item.title}</h3>
-              <h4>{item.startDate} - {item.endDate}</h4>
-              <p>{item.details}</p>
-              <p><strong>Type:</strong> {item.type}</p>
-              <p><strong>Location:</strong> {item.location}</p>
-            </div>
+          <div className={`${styles.row}`}>
+            <div className={styles.imageContainer} style={{ backgroundImage: `url(${item.images.showcase})` }}>
+              <div className={`${styles.column} ${styles.leftColumn}`}>
+                {item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={150} height={100} className={styles.image} /> }
+                <h2>{item.school}</h2>
+                <h3>{item.title}</h3>
+                <p>{item.startDate} - {item.endDate}</p>
+                <p><strong>Area of focus:</strong> {item.details}</p>
+                <p><strong>Type:</strong> {item.type}</p>
+                <p><strong>Location:</strong> {item.location}</p>
+              </div>
+            </div>  
           </div>
         </div>
       ))}

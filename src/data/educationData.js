@@ -1,16 +1,16 @@
 // data/educationData.js
 const educationData = [
     {
-      school: "Queen's College",
-      startDate: 'Sept 1985',
+      school: "Queen's College, Taunton",
+      startDate: 'Sept 1984',
       endDate: 'July 1991',
-      title: 'Bachelor of Science in Computer Science',
+      title: 'Advanced Levels & GCSEs',
       details: 'Economics, History and Politics',
-      type: 'GCSE / Advanced Levels',
-      location: 'Somerset, England (UK)',
+      type: 'Advanced Levels',
+      location: 'Somerset, England',
       website: '',
       images: {
-        school: '/images/queensLogo.png',
+        school: '/images/queens-logo.jpg',
         showcase: '/images/education-queens.jpg'
       }
     },
@@ -19,7 +19,7 @@ const educationData = [
       startDate: 'Feb 2017',
       endDate: 'Aug 2017',
       title: 'Full Stack Web Development',
-      details: '',
+      details: 'React.js, MongoDB, Node.js, Express.js',
       type: 'Certification',
       location: 'Arlington, Virginia',
       website: '',
@@ -32,13 +32,13 @@ const educationData = [
       school: 'Revature',
       startDate: 'Oct 2022',
       endDate: 'Feb 2023',
-      title: 'Test Automation Engineer Trainee',
-      details: 'Training Course in Java to write code base for automating testing of websites and websites across different browsers',
-      type: 'Real World Training Course',
+      title: 'Test Automation Engineer',
+      details: 'Java backend with Selenium & JUnit for automating the testing of web apps',
+      type: 'On the Job Training',
       location: '100% Remote',
       website: '',
       images: {
-        school: '/images/rev-logo-white.webp',
+        school: '/images/revature.jpg',
         showcase: '/images/education-revature.jpg'
       }
     },
@@ -46,13 +46,13 @@ const educationData = [
         school: 'New York University',
         startDate: ' Jan 1992',
         endDate: 'June 1996',
-        title: 'Accounting / Marketing',
-        details: 'Double Major',
+        title: 'Accounting & Marketing',
+        details: 'Double Major in Accounting & Marketing',
         type: 'Bachelor of Science Degree',
         location: 'New York, NY',
         website: '',
         images: {
-          school: '/images/nyuLogo.png',
+          school: '/images/nyu-logo.jpg',
           showcase: '/images/education-nyu.jpg'
         }
       },
