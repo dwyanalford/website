@@ -11,7 +11,7 @@ const Education = () => {
     <>
       {sortedEducationData.map((item, index) => (
         <div key={index} className={styles.wrapper}>
-          <div className={`${styles.row}`}>
+          <div className={styles.row}>
             <div className={styles.imageContainer} style={{ backgroundImage: `url(${item.images.showcase})` }}>
               <div className={`${styles.column} ${styles.leftColumn}`}>
                 {item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={150} height={100} className={styles.image} /> }

@@ -2,9 +2,10 @@ import Head from 'next/head'
 import MobileMenu from '@/components/MobileMenu'
 import Content from '@/components/Content'
 import Hero from '@/components/Hero'
+import Biography from '@/components/Biography'
 import Footer from '@/components/Footer'
 
-export default function Biography() {
+export default function BiographyPage() {
   return (
     <>
       <Head>
@@ -19,6 +20,7 @@ export default function Biography() {
       <MobileMenu/>
       <Content>
         <Hero pageName="Biography" />
+        <Biography />
       </Content>
       <Footer />
     </>
