@@ -19,7 +19,14 @@ const Biography = () => {
                         </div>
                         <div className={styles.column}>
                             <div className={styles.rightColumn}>
-
+                                <div className={styles.columnImage}>
+                                    <Image 
+                                        src={data.image} 
+                                        alt={data.alt} 
+                                        width={600} 
+                                        height={800} 
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
