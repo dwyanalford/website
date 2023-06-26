@@ -1,14 +1,4 @@
 /* styles/Home.module.css */
-/* .imageContainer {
-  position: relative;
-  border-radius: var(--contentBorderRadius);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 0.5s ease;
-  height: 699px;
-  width: 1600px;
-} */
 
 .imageContainer {
   position: relative;

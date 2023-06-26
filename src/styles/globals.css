@@ -1,4 +1,8 @@
 /* styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
 
@@ -53,18 +57,15 @@
   
   html,
   body {
-    font-family: sans-serif;
-    font-size: var(--font-p);
-    line-height: 1.5;
-    max-width: 100vw;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   p {
     font-size: 16px;
   }
 
-  a, button {
+  a {
     text-decoration: none;
     padding: 10px;
     color: #7e7e7e;
@@ -87,13 +88,10 @@
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   }
 
-  .button-highlights {
-    padding: 3px 10px;
-    margin-left: 15px;
-    border-radius: 8px;
-    font-size: 14px;
-    text-decoration: none;
+  .blue-button {
+    @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded;
   }
+  
 
   .button-gold {
     background-color: gold;

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Footer from '@/components/Footer'
 import SideMenu from '@/components/SideMenu'
 import ContainerHero from '@/components/ContainerHero'
-import Contact from '@/components/Contact'
+import Contact from '@/components/contact/Contact'
 
 export default function ContactPage() {
   return (

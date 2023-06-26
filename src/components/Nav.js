@@ -1,26 +1,47 @@
 //components/Nav.js
 import styles from '@/styles/Nav.module.css';
+import { FaUser, FaHome, FaCode, FaBriefcase, FaBook, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
-import { useRouter } from 'next/router'; // Import useRouter
-import Image from 'next/image';
+import { useRouter } from 'next/router';
 import menuLinks from '@/data/menuLinks';
 
 const Nav = () => {
-  const router = useRouter(); // Use useRouter
+  const router = useRouter();
   const sortedMenuLinks = menuLinks.sort((a, b) => a.text.localeCompare(b.text));
+
+  const getIconByMenuLinkText = (text) => {
+    switch (text.toLowerCase()) {
+      case 'biography':
+        return <FaUser />;
+      case 'home':
+        return <FaHome />;
+      case 'projects':
+        return <FaCode />;
+      case 'experience':
+        return <FaBriefcase />;
+      case 'skills':
+        return <FaBook />;
+      case 'education':
+        return <FaBook />;
+      case 'contact':
+        return <FaEnvelope />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <nav className={styles.nav}>
       <ul>
-        {sortedMenuLinks.map(({ href, src, alt, text, target }) => {
-          const isActive = router.pathname === href; // Check if the current route matches the link's href
-          const linkClassName = isActive ? styles.activeLink : ''; // Apply activeLink class if the link is active
+        {sortedMenuLinks.map(({ href, text }) => {
+          const isActive = router.pathname === href;
+          const linkClassName = isActive ? styles.activeLink : '';
 
           return (
             <li key={href}>
-              <Link href={href} className={linkClassName} target={target} rel="noopener noreferrer">
-                  <Image src={src} alt={`${text} button`}  width={25} height={22} />
-                  <span>{text}</span>
+              <Link href={href} className={linkClassName}>
+                {getIconByMenuLinkText(text)}
+                <span>{text}</span>
               </Link>
             </li>
           );
