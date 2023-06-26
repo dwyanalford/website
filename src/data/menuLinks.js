@@ -1,7 +1,7 @@
 // data/menuLinks.js
 const menuLinks = [
   { href: '/biography', src: '/images/profile.png', text: 'Biography' },
-  { href: '/', src: '/images/homeicon.png', text: 'Home' },
+  // { href: '/', src: '/images/homeicon.png', text: 'Home' },
   { href: '/projects', src: '/images/projects.png', text: 'Projects' },
   { href: '/experience', src: '/images/experience2.png', text: 'Experience' },
   { href: '/skills', src: '/images/skills.png', text: 'Skills' },

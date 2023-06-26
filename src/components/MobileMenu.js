@@ -3,7 +3,7 @@ import { useRef, useEffect, useContext } from 'react';
 import ProImage from '@/components/ProImage';
 import Nav from '@/components/Nav';
 import { CSSTransition } from 'react-transition-group';
-import { GlobalContext } from '../context/GlobalState';
+import { GlobalContext } from '@/context/GlobalState';
 
 export default function MobileMenu() {
     const { state, dispatch } = useContext(GlobalContext);
@@ -31,8 +31,8 @@ export default function MobileMenu() {
     }
 
     return (
-        <div>
-            <div onClick={handleMenuClick} className='menu-icon'>
+        <>
+            <div onClick={handleMenuClick} className='text-4xl font-bold cursor-pointer text-gray-500'>
                 <span>☰</span>
             </div>
             <CSSTransition
@@ -52,6 +52,6 @@ export default function MobileMenu() {
                     <Nav />
                 </div>
             </CSSTransition>
-        </div>
+        </>
     );
 }

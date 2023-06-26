@@ -66,7 +66,7 @@ const heroData = [
         },
         title: "An Interesting Fact About Me",
         subTitle: "At 15 years old, I had already lived and went to school in six different countries.",
-        color: "white",
+        color: "black",
         text: ""
       },
     ],
