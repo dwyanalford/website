@@ -29,7 +29,7 @@ const Header = () => {
             <Avatar />
         </div>
         <div className='flex w-3/12 justify-end'>
-            <Link href="/biography" rel="noopener noreferrer" className='blue-button'>Biography</Link>
+            {/* <Link href="/biography" rel="noopener noreferrer" className='blue-button'>Biography</Link> */}
             <NavButton handleClick={handleClick} />
         </div>
         <style jsx>{`

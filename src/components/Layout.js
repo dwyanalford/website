@@ -8,9 +8,6 @@ const Layout = ({ children }) => {
           {children}
         </div>
       </div>
-      <style jsx>{`
-          
-        `}</style>
     </>
   );
 };
