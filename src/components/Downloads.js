@@ -7,9 +7,6 @@ const Downloads = () => {
           <p>These are my Downloads</p>
              
         </div>
-        <style jsx>{`
-        `}
-        </style>
       </section>
     );
   };
