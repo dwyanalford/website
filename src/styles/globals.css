@@ -59,6 +59,7 @@
   body {
     margin: 0;
     padding: 0;
+    background-color: #D4DDDF;
   }
 
   p {
@@ -74,7 +75,11 @@
   }
 
   .grey-button {
-    @apply hover:text-blue-500 text-slate-600 border-2 border-gray-400 hover:border-white hover:py-3 hover:px-6;
+    @apply hover:text-blue-500 text-slate-600 border-2 border-gray-400 hover:border-white hover:shadow-lg hover:shadow-slate-400/50;
+  }
+
+  .activeLink {
+  
   }
 
 

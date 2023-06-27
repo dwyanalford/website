@@ -1,5 +1,4 @@
 //components/Nav.js
-import styles from '@/styles/Nav.module.css';
 import { FaUser, FaHome, FaCode, FaBriefcase, FaBook, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -35,11 +34,11 @@ const Nav = ({ className, dataId }) => {
       <ul className='flex p-2 xl:gap-7'>
         {sortedMenuLinks.map(({ href, text }) => {
           const isActive = router.pathname === href;
-          const linkClassName = isActive ? styles.activeLink : '';
+          const linkClassName = isActive ? '.activeLink' : '';
 
           return (
             <li key={href} className='flex'>
-              <Link href={href} className={`${linkClassName} flex button grey-button gap-2`}>
+              <Link href={href} className={`${linkClassName} button grey-button flex gap-2`}>
                 <p className='self-center'>{getIconByMenuLinkText(text)}</p>
                 <p className='self-center'>{text}</p>
               </Link>
