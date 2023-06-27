@@ -304,3 +304,85 @@
     }
   }
 
+  /****************************************************   TEMPLATE - BACKGROUND COLORS for <divs> to see on /template page on frontend */
+
+  .red {
+    @apply bg-red-500
+  }
+
+  .blue {
+    @apply  bg-blue-500
+  }
+
+  .orange {
+    @apply bg-orange-300
+  }
+
+  /* containers */
+  .green {
+    @apply bg-emerald-700
+  }
+
+  /*******************************************************************   TEMPLATE - SECTION, CONTAINERS, AND ITEMS  *********************/
+  
+  .header {
+    
+  }
+
+  .header-container {
+    
+  }
+
+  .header-item {
+    
+  }
+
+  .page-title {
+    
+  }
+
+  .page-title-container {
+
+  }
+
+  .page-title-item {
+
+  }
+
+  .hero {
+
+  }
+
+  .hero-container {
+
+  }
+
+  .hero-item {
+
+  }
+
+  .content {
+
+  }
+
+  .content-container {
+
+  }
+
+  .content-item {
+
+  }
+
+  .footer {
+
+  }
+
+  .footer-container {
+
+  }
+
+  .footer-item {
+
+  }
+
+
