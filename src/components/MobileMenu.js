@@ -49,7 +49,7 @@ export default function MobileMenu() {
                     </div>
                     <br />
                     <ProImage />
-                    <Nav />
+                    <Nav className="navInstance1" dataId="nav1" />
                 </div>
             </CSSTransition>
         </>
