@@ -1,46 +1,50 @@
+//components/Template.js
+
+// please note that the colors here added as classes are only for the template page so that the <divs> can be identified
+// when using code from this template remember to remove the color classes below
 
 const TemplatePage = () => {
     return (
       <>
       {/* <!-- Header section --> */}
-<section className="bg-red-500 p-4 mx-auto flex justify-center sticky top-0 z-10">
-  <div className="header flex justify-center bg-stone-600 p-4 w-full gap-1 ">
-    <div className="w-1/12 p-4 bg-orange-300 text-center">Mobile</div>
-    <div className="w-3/12 p-4 bg-orange-300 text-center">Avatar</div>
-    <div className="w-6/12 p-4 bg-orange-300 text-center">Desktop</div>
-    <div className="w-2/12 p-4 bg-orange-300 text-center">Contact</div>
+<section className="header flex justify-center p-4 mx-auto sticky top-0 z-10 red">
+  <div className="header-container flex justify-center p-4 w-full gap-1 green">
+    <div className="header-item w-1/12 p-4 text-center orange">Header 1</div>
+    <div className="header-item w-3/12 p-4 text-center orange">Header 2</div>
+    <div className="header-item w-6/12 p-4 text-center orange">Header 3</div>
+    <div className="header-item w-2/12 p-4 text-center orange">Header 4</div>
   </div>
 </section>
 
 {/* <!-- Page Header section --> */}
-<section className="bg-blue-500 text-white">
-  <div className="flex flex-wrap justify-center">
-    <div className="w-1/4 p-4 text-center">Page Header</div>
+<section className="page-title flex p-4 blue">
+  <div className="page-title-container flex flex-wrap justify-center w-full p-4 green">
+    <div className="page-title-item w-full p-4 text-center orange">Page Header Item</div>
   </div>
 </section>
 
 {/* <!-- Hero section --> */}
-<section className="bg-green-500 p-4 h-screen">
-  <div className="flex flex-wrap relative">
-    <div className="hero-image w-1/2 p-4">Background Image</div>
-    <div className="hero-text absolute top-48 left-48">Foreground Text</div>
+<section className="hero flex p-4 h-screen red">
+  <div className="hero-container flex flex-wrap relative w-full p-4 green">
+    <div className="hero-item w-full p-4 orange">Hero Item 1</div>
+    <div className="hero-item absolute top-48 left-48 orange">Hero item 2</div>
   </div>
 </section>
 
 {/* <!-- Content section --> */}
-<section className="bg-yellow-500 p-4 mx-auto">
-  <div className="flex flex-wrap w-full p-4 bg-amber-700 justify-center gap-14">
-    <div className="p-4 bg-cyan-500 text-center" style={{width: '500px', order: 2}}>Content Image</div>
-    <div className="p-4 bg-teal-500 text-center" style={{width: '600px', order: 1}}>Content Text</div>
+<section className="content flex w-full mx-auto p-10 blue">
+  <div className="content-container flex flex-wrap w-full justify-center p-4 gap-4 lg:gap-2 green">
+    <div className="content-item p-4 text-center w-full lg:flex-1 orange">Content Item 1</div>
+    <div className="content-item p-4 text-center w-full lg:flex-1 orange">Content Item 2</div>
   </div>
 </section>
 
 {/* <!-- Footer section --> */}
-<section className="bg-purple-500 p-10">
-  <div className="flex flex-wrap justify-center w-full gap-7">
-    <div className="w-1/6 p-4 text-center bg-sky-300" style={{width: '500px'}}>Footer Item 1</div>
-    <div className="w-1/6 p-4 text-center bg-sky-300" style={{width: '500px'}}>Footer Item 2</div>
-    <div className="w-1/6 p-4 text-center bg-sky-300" style={{width: '500px'}}>Footer Item 3</div>
+<section className="footer flex w-full p-6 red">
+  <div className="footer-container flex flex-wrap justify-center w-full gap-4 p-4 green">
+    <div className="footer-item w-full lg:w-1/4 p-4 text-center orange">Footer Item 1</div>
+    <div className="footer-item w-full lg:w-1/4 p-4 text-center orange">Footer Item 2</div>
+    <div className="footer-item w-full lg:w-1/4 p-4 text-center orange">Footer Item 3</div>
   </div>
 </section>
       </>
