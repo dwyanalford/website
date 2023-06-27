@@ -4,6 +4,7 @@ import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Biography from '@/components/Biography'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 export default function BiographyPage() {
   return (
@@ -17,11 +18,9 @@ export default function BiographyPage() {
         <meta name="robots" content="index,follow"/>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <MobileMenu/>
-      <Content>
+      <Header />
         <Hero pageName="Biography" />
         <Biography />
-      </Content>
       <Footer />
     </>
   )
