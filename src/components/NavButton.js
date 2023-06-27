@@ -1,11 +1,12 @@
 // components/NavButton.js
 import React from 'react';
-import styles from '@/styles/Header.module.css';
+import { FaEnvelope } from 'react-icons/fa';
 
 const NavButton = ({ handleClick }) => {
   return (
-    <button className='bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded' onClick={handleClick}>
-      Contact
+    <button className='flex button blue-button uppercase gap-2' onClick={handleClick}>
+      <FaEnvelope className='self-center'/>
+      <p className='self-center'>Contact</p>
     </button>
   );
 };

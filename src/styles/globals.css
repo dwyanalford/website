@@ -65,51 +65,18 @@
     font-size: 16px;
   }
 
-  a {
-    text-decoration: none;
-    padding: 10px;
-    color: #7e7e7e;
-    font-size: 15px;
-    font-weight: bold;
-    border-color: var(--borderColor);
-    border-width: var(--borderWidth);
-    border-style: var(--borderStyle);
-    border-radius: var(--buttonBorderRadius);
-    background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
-
-  a:hover {
-    color: var(--font-hover);
-    background-color: #747474;
-  }
-
-  a:active {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  .button {
+    @apply py-2 px-4 rounded shadow-lg shadow-slate-400/50;
   }
 
   .blue-button {
-    @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded;
-  }
-  
-
-  .button-gold {
-    background-color: gold;
-    color: #333;
+    @apply bg-blue-500 hover:bg-blue-600 text-white;
   }
 
-  .button-green {
-    background-color: green;
-    color: white;
+  .grey-button {
+    @apply hover:text-blue-500 text-slate-600 border-2 border-gray-400 hover:border-white hover:py-3 hover:px-6;
   }
 
-  h1 {
-    margin-bottom: 30px;
-  }
-
-  li {
-    text-decoration: none;
-  }
 
   /* -----------------------------   side Menu container */
 
@@ -330,11 +297,11 @@
   }
 
   .header-container {
-    
+    @apply shadow-lg shadow-slate-100/50;
   }
 
   .header-item {
-    
+    /* @apply bg-red-300; */
   }
 
   .page-title {
