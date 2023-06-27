@@ -17,8 +17,6 @@ const Hero = ({ pageName }) => {
                 height={700}
                 alt="An african american man smiling with computer code in the background"
                 className=''
-                // srcSet={`${data.image.mobile.url} 480w, ${data.image.tablet.url} 768w, ${data.image.large.url} 1600w`}
-                // sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1600px"
               />
               </div>
             <div className="hero-item xl:absolute xl:top-0 xl:left-40 2xl:ml-[50px] ">
