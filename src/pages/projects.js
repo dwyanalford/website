@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import MobileMenu from '@/components/MobileMenu'
-import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import Projects from '@/components/Projects'
+import Header from '@/components/Header'
 
 export default function ProjectsPage() {
   return (
@@ -17,11 +16,9 @@ export default function ProjectsPage() {
         <meta name="robots" content="index,follow"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MobileMenu />
-      <Content>
-        <Hero pageName="Projects" />
-        <Projects />
-      </Content>
+      <Header/>
+      <Hero pageName="Projects" />
+      <Projects />
       <Footer />
     </>
   )

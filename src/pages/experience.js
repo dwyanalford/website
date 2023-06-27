@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import MobileMenu from '@/components/MobileMenu'
-import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import Experience from '@/components/Experience'
+import Header from '@/components/Header'
 
 export default function ExperiencePage() {
   return (
@@ -17,11 +16,9 @@ export default function ExperiencePage() {
         <meta name="robots" content="index,follow"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MobileMenu />
-      <Content>
-        <Hero pageName="Experience" />
-        <Experience />
-      </Content>
+      <Header/>
+      <Hero pageName="Experience" />
+      <Experience />
       <Footer />
     </>
   )

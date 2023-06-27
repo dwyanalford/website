@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import MobileMenu from '@/components/MobileMenu'
-import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Skills from '@/components/Skills'
 
 export default function SkillsPage() {
   return (
@@ -16,10 +16,9 @@ export default function SkillsPage() {
         <meta name="robots" content="index,follow"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MobileMenu />
-      <Content>
+      <Header/>
         <Hero pageName="Skills" />
-      </Content>
+        <Skills/>
       <Footer />
     </>
   )
