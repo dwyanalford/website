@@ -1,6 +1,5 @@
 // components/MobileMenu.js
 import { useRef, useEffect, useContext } from 'react';
-import ProImage from '@/components/ProImage';
 import Nav from '@/components/Nav';
 import { CSSTransition } from 'react-transition-group';
 import { GlobalContext } from '@/context/GlobalState';
@@ -42,13 +41,12 @@ export default function MobileMenu() {
                 unmountOnExit
                 nodeRef={menuRef}
             >
-                <div ref={menuRef} className={state.isMenuOpen ? 'mobile-menu' : 'mobile-menu hidden'}>
+                <div ref={menuRef} className={`${state.isMenuOpen ? 'mobile-menu' : 'mobile-menu hidden'}`}>
                     <div onClick={handleMenuClick} className='close-icon'>
                         <span>&#10005;&nbsp;</span>
                         <span>close</span>
                     </div>
                     <br />
-                    <ProImage />
                     <Nav className="navInstance1" dataId="nav1" />
                 </div>
             </CSSTransition>
