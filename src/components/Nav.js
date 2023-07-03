@@ -30,7 +30,7 @@ const Nav = ({ className, dataId }) => {
   };
 
   return (
-    <nav className={`${className} flex p-2 overflow-hidden mx-auto`} data-id={dataId}>
+    <nav className={`${className} p-2 mx-auto`} data-id={dataId}>
       <ul className='flex p-2 xl:gap-7'>
         {sortedMenuLinks.map(({ href, text }) => {
           const isActive = router.pathname === href;
@@ -38,7 +38,7 @@ const Nav = ({ className, dataId }) => {
 
           return (
             <li key={href} className='flex'>
-              <Link href={href} className={`${linkClassName} button grey-button flex gap-2`}>
+              <Link href={href} className={`${linkClassName} button grey-button flex gap-2 xl:gap-2`}>
                 <p className='self-center'>{getIconByMenuLinkText(text)}</p>
                 <p className='self-center'>{text}</p>
               </Link>

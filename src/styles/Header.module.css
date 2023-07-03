@@ -13,28 +13,6 @@
     z-index: 1000;
 }
 
-.leftSection {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.rightSection {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.menuButton, .navButton {
-    margin: 0 10px;
-    padding: 10px;
-    border: none;
-    background-color: #f8f9fa;
-    color: #343a40;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
 /* This class will be added to the header when the overlay is active */
 .headerContainer.overlayActive {
     pointer-events: none; /* Disable all interactions with elements in the header */
