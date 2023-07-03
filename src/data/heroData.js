@@ -9,13 +9,13 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/home-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/projects-image-large.jpg" },
           tablet: { ...tablet, url: "/images/home-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/home-image-mobile.jpg" },
         },
         title: "Dwyan is a",
         subTitle: "creative problem solver with a penchant for turning ideas into reality.",
-        color: "black",
+        color: "white",
         text: ""
       },
     ],
