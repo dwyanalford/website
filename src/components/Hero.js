@@ -1,5 +1,5 @@
+//components/Hero.js
 import React from 'react';
-import Image from 'next/image';
 import heroData from '@/data/heroData';
 
 const Hero = ({ pageName }) => {
@@ -7,37 +7,26 @@ const Hero = ({ pageName }) => {
 
   return (
     pageData.content.map((data, index) => (
-      <div key={index} className="hero flex xl:p-4 w-full mt-[70px] xl:mt-[95px]">
-       
-          <div className="hero-container flex flex-wrap relative w-full p-4">
-            <div className="hero-item w-[1600px] p-2 xl:p-4 mx-auto bg-white rounded-lg mt-[20px]">
-              <Image
-                src={data.image.large.url}
-                width={1600}
-                height={700}
-                alt="An african american man smiling with computer code in the background"
-                className=''
-              />
-              </div>
-            <div className="hero-item xl:absolute xl:top-0 xl:left-40 2xl:ml-[50px] ">
-              <h2
-                className={`font-bold mb-4 mt-5 text-[2.25rem] xl:text-[5.5rem] xl:mb-0 xl:mt-20 ${
-                  data.color === 'black' ? 'text-black' : 'text-white'
-                }`}
-              >
-                {data.title}
-              </h2>
-              <p
-                className={`text-[1.5rem] w-full xl:text-[2rem] xl:w-[400px] xl:ml-1 leading-snug ${
-                  data.color === 'black' ? 'text-black' : 'text-white'
-                }`}
-              >
-                {data.subTitle}
-              </p>
-            </div>
+      <div key={index} 
+           className="hero flex w-full h-screen p-4 relative"
+           style={{ backgroundImage: `url(${data.image.large.url})` }}>
+          <div className="hero-item absolute bottom-40 left-0 p-8 md:p-0 md:h-[500px] md:static md:ml-[60px] md:mt-[90px]">
+            <h2
+              className={`font-bold mb-4 mt-5 text-[2.25rem] xl:text-[5.5rem] xl:mb-0 ${
+                data.color === 'black' ? 'text-black' : 'text-white'
+              }`}
+            >
+              {data.title}
+            </h2>
+            <p
+              className={`text-[1.5rem] xl:text-[2rem] w-[400px] xl:ml-1 leading-snug ${
+                data.color === 'black' ? 'text-black' : 'text-white'
+              }`}
+            >
+              {data.subTitle}
+            </p>
           </div>
-        </div>
-     
+      </div>
     ))
   );
 };
