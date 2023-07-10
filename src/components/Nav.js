@@ -9,21 +9,22 @@ const Nav = ({ className, dataId }) => {
   const sortedMenuLinks = menuLinks.sort((a, b) => a.text.localeCompare(b.text));
 
   const getIconByMenuLinkText = (text) => {
+    const color = '#8f9293';
     switch (text.toLowerCase()) {
       case 'biography':
-        return <FaUser />;
+        return <FaUser color={color} />;
       case 'home':
-        return <FaHome />;
+        return <FaHome color={color} />;
       case 'projects':
-        return <FaCode />;
+        return <FaCode color={color} />;
       case 'experience':
-        return <FaBriefcase />;
+        return <FaBriefcase color={color} />;
       case 'skills':
-        return <FaBook />;
+        return <FaBook color={color} />;
       case 'education':
-        return <FaBook />;
+        return <FaBook color={color} />;
       case 'contact':
-        return <FaEnvelope />;
+        return <FaEnvelope color={color} />;
       default:
         return null;
     }
