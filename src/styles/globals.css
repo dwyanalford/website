@@ -368,12 +368,17 @@
     transform: scale(1.0);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
+
+  .hero-item h2 {
+    line-height: 1;
+  }
   
   .hero-item h2, .hero-item p {
     opacity: 0;
     transform: translateY(-100%);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, filter 0.4s ease-in-out;;
     transition-delay: 1s; 
+    filter: blur(5px);
     /* animation: scaleDown 2s infinite ease-in-out; 
     animation-delay: 1.3s;  */
   }
@@ -388,6 +393,7 @@
   .fade-in .hero-item h2, .fade-in .hero-item p {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0);
   }
   
   

@@ -16,7 +16,6 @@ export default function EducationPage() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
         <Header />
-        <Hero pageName="Education" />
         <Education />
     </>
   )
