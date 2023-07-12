@@ -94,7 +94,7 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/projects-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/home-image-large.jpg" },
           tablet: { ...tablet, url: "/images/projects-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/projects-image-mobile.jpg" },
         },
