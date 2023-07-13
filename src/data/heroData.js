@@ -9,7 +9,7 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/projects-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/home-background.jpg" },
           tablet: { ...tablet, url: "/images/home-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/home-image-mobile.jpg" },
         },
@@ -26,7 +26,7 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/education-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/education-background.jpg" },
           tablet: { ...tablet, url: "/images/education-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/education-image-mobile.jpg" },
         },
@@ -43,7 +43,7 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/experience-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/experience-background.jpg" },
           tablet: { ...tablet, url: "/images/experience-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/experience-image-mobile.jpg" },
         },
@@ -60,7 +60,7 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/biography-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/biography-background.jpg" },
           tablet: { ...tablet, url: "/images/biography-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/biography-image-mobile.jpg" },
         },
@@ -77,7 +77,7 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/skills-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/skills-background.jpg" },
           tablet: { ...tablet, url: "/images/skills-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/skills-image-mobile.jpg" },
         },
@@ -94,13 +94,13 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/home-image-large.jpg" },
+          large: { ...largeDevice, url: "/images/projects-background.jpg" },
           tablet: { ...tablet, url: "/images/projects-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/projects-image-mobile.jpg" },
         },
         title: "What am I building now?",
         subTitle: "See my latest project below as well as past projects.",
-        color: "white",
+        color: "black",
         text: ""
       },
     ],
