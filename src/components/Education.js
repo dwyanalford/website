@@ -1,6 +1,5 @@
 //components/Education.js
 import Image from 'next/image';
-import styles from '@/styles/Education.module.css';
 import educationData from '@/data/educationData';
 
 const Education = () => {
@@ -10,14 +9,21 @@ const Education = () => {
   return (
     <>
       {sortedEducationData.map((item, index) => (
-        <section key={index} className="education flex w-full mx-auto p-10">
-            <div className="education-container flex flex-wrap w-full justify-center p-4 gap-4 lg:gap-2">
-              <div className="education-item p-4 w-full lg:flex-1" style={{ backgroundImage: `url(${item.images.showcase})` }}>
-              {item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={150} height={100} className={styles.image} /> }
+        <section key={index} className="education flex w-full lg:p-10">
+            <div className="education-container mt-[100px] flex flex-wrap w-full p-1 gap-3 lg:gap-2">
+              
+              <div className="education-item lg:p-4 w-full bg-center bg-cover md:flex-1"
+              style={{ backgroundImage: `url(${item.images.showcase})`}}
+              >
+              
+                <div>{item.images.school && <Image src={item.images.school} alt={`${item.school} logo`} width={150} height={100} 
+                className='md:mx-auto md:mt-[15%] lg:mt-[6%]'/> }</div>
+              
               </div>
-              <div className="education-item p-4 text-center w-full lg:flex-1" >
+              
+              <div className="education-item p-4 w-full md:flex-1" >
                  <div>
-                 <div className='ml-[200px] mt-[100px]'>
+                 <div className='first-letter:'>
                   
                   <h2>{item.school}</h2>
                   <h3>{item.title}</h3>
