@@ -7,19 +7,20 @@ const Biography = () => {
     return (
         <>
             {bioData.map((data, index) => (
-                <div key={index} className={styles.wrapper}>
-                    <div className={styles.row}>
-                        <div className={styles.column}>
-                            <div className={styles.leftColumn}>
-                                <h4 className={styles.heading}>{data.heading}</h4>
-                                <p className={styles.dateDisplayed}>{data.date}</p>
-                                <p className={styles.bioParagraph1}>{data.p1}</p>
-                                <p className={styles.bioParagraph2}>{data.p2}</p>
+                <div key={index} className="content">
+                    <div className="content-container lg:gap-2">
+                        <div className="w-full p-4 md:flex-1">
+                            <div className='max-w-md'>
+                                <p className='text-4xl'>{data.date}</p>
+                                <h4 className='font-bold text-2xl pt-8'>{data.heading}</h4>
+                                
+                                <p className='pt-8'>{data.p1}</p>
+                                <p className='pt-8'>{data.p2}</p>
                             </div>
                         </div>
-                        <div className={styles.column}>
-                            <div className={styles.rightColumn}>
-                                <div className={styles.columnImage}>
+                        <div className='w-full md:flex-1'>
+                            <div className=''>
+                                <div className=''>
                                     <Image 
                                         src={data.image} 
                                         alt={data.alt} 
