@@ -9,10 +9,10 @@ const Education = () => {
   return (
     <>
       {sortedEducationData.map((item, index) => (
-        <section key={index} className="education flex w-full lg:p-10">
-            <div className="education-container mt-[100px] flex flex-wrap w-full p-1 gap-3 lg:gap-2">
+        <section key={index} className="content">
+            <div className="content-container lg:gap-2">
               
-              <div className="education-item lg:p-4 w-full bg-center bg-cover md:flex-1"
+              <div className="w-full bg-center bg-cover md:flex-1 lg:p-4"
               style={{ backgroundImage: `url(${item.images.showcase})`}}
               >
               
@@ -21,9 +21,9 @@ const Education = () => {
               
               </div>
               
-              <div className="education-item p-4 w-full md:flex-1" >
+              <div className="p-4 w-full md:flex-1" >
                  <div>
-                 <div className='first-letter:'>
+                 <div className=''>
                   
                   <h2>{item.school}</h2>
                   <h3>{item.title}</h3>
