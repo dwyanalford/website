@@ -398,23 +398,20 @@
     filter: blur(0);
   }
 
-  .education-item {
-    
-  }
-  
-  
+  /* styles/tailwind.css */
 
+@layer components {
   .content {
-
+    @apply flex w-full mt-[100px] lg:p-10;
   }
 
   .content-container {
-
+    @apply flex flex-wrap w-full p-1 gap-3;
   }
 
-  .content-item {
+}
 
-  }
+  
 
   .footer {
 
