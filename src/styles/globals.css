@@ -402,7 +402,7 @@
 
 @layer components {
   .content {
-    @apply flex w-full mt-[100px] lg:p-10;
+    @apply flex w-full lg:p-10;
   }
 
   .content-container {

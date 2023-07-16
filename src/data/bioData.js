@@ -3,50 +3,38 @@
 const bioData = [
     {
         heading: 'From Brooklyn to the World',
-        p1: 'Born in Brooklyn in November 1972, Dwyan Alford began a global adventure due to his mother\'s United Nations Development Programme (UNDP) position. His childhood was filled with travel and exposure to various cultures.',
-        p2: 'Dwyan experienced significant moments in Trinidad (1973), Liberia (1978), Kenya (1980), Ghana (1982), and England (1984-1991), going to formal schooling in all these countries, gaining insights into unique historical periods and sociopolitical contexts.',
-        image: '/images/bio-image1.jpg',
-        date: '1972 - 91',
+        p1: "Dwyan Anthony Alford was born at 10:03am under the vibrant city lights of Brooklyn, New York, USA at the Maimonides Medical Center on November 23, 1972 to a Jamaican father and Trinidadian mother. Yet, the sprawling urban setting was but a mere prologue to his journey. A year later, his mother's homeland, Trinidad, called to him. The pulsating rhythms of soca and calypso were his lullabies. Trinidad, a cultural melting pot, was the backdrop to his earliest memories and then he returned to Brooklyn in 1974 attending the 'Blessed Sacrament' Catholic School.",
+        p2: "Dwyan's journey was largely guided by his mother's role at the United Nations, which took them to Liberia in 1978. Liberia, being the first African republic, was on the brink of a tumultuous coup d'état. As time passed, the next chapter opened in Kenya's Kenton College in 1980. From there, the journey veered westward to Ghana, the proud pioneer in African independence, amidst another military coup under Jerry Rawlings. It was here in Accra that Dwyan attended the Ghana International School.",
+        p3: "In 1984, Dwyan journeyed to England to attend Queen's College. Amidst the English tea culture, punk rock, football fever, 'Ghostbusters' craze, Wimbledon Tennis and the iconic BBC series 'Eastenders', he immersed himself in the nation's rich history, offering new perspectives and broadening his world view.",
+        image: '/images/content-background-bio-1.jpg',
+        date: '1972 - 1992',
         alt: 'Image of Dwyan Alford in a warehouse in Portland, OR'
     },
     {
-        heading: 'A Formal Education and Creative Calling',
-        p1: 'Dwyan completed his A levels at Queen\'s College in England in 1991, then moved back to New York after more than 12 years. Accepted at NYU\'s Stern School of Business, he initially pursued accounting, only to disappointed because he was not doing what made him feel alive, the creative arts, especially the digital revolution then coming into focus.',
-        p2: 'He interned at Videographics as a Graphic Designer. Working for its main client, Pfizer, creating their Powerpoint presentations.',
-        image: '/images/bio-image1.jpg',
-        date: '1991 - 1998',
-        alt: 'Image of Dwyan Alford in a warehouse in Portland, OR'
-    },
-    {
-        heading: 'The Digital Revolution',
-        p1: 'Dwyan delved into video production and editing at Imagedog since it had an AVID video editing studio on the premises, he produced and edited his first-ever music video, "41 Shots". This led him back to NYU for a Digital Video Production certification. Soon after he produced and starred in the short film "The Day," showcased in NYC in 2000 and various film festivals around the city.',
-        p2: 'This experience further ignited his creative passion, underlining the power of visual narrative. He continued exploring video production and creating compelling stories, and then soon everything would change forever... ',
-        image: '/images/bio-image1.jpg',
-        date: '1998 -1999',
-        alt: 'Image of Dwyan Alford in a warehouse in Portland, OR'
-    },
-    {
-        heading: 'Witnessing History and New Beginnings',
-        p1: 'The 9/11 tragedy deeply affected Dwyan, spurring a desire for change. This culminated in his decision to leave the U.S. and start a new chapter in Botswana.',
-        p2: 'Dwyan also joined the anti-Iraq war protest in 2003. As part of the sea of demonstrators in Times Square, he became part of a historical moment.',
-        image: '/images/bio-image1.jpg',
-        date: '2001 - 2003',
+        heading: 'Back to New York City',
+        p1: "At the age of 18, having completed his A levels at Queen's College in Somerset, England, Dwyan returned to where it all began - New York. He attended New York University's Stern School of Business earning a double degree in Accounting and Marketing in 1996. The city, basking in the era of 'Seinfeld', 'The Cosby Show', hip hop evolution, the digitial revolution and baggy fashion trends, offered a familiar yet transformed landscape.",
+        p2: "After graduation, Dwyan initially pursued a career in the accounting field. He soon realized that it wasn't for him. His creativity sought a different outlet, leading him to join 'Imagedog Videographics', where he trained to become a Graphic Designer. Here, Dwyan found a significant source of satisfaction, developing his graphic design skills developing Powerpoint slides for the company's main client, Pfizer.",
+        p3: "His stint at 'Imagedog Videographics' ignited a spark in Dwyan when he discovered the world of video production and editing, taking him back to NYU for a certification in digital video production. He explored this new path producing and editing his first music video '41 Shots' honoring the life of Amadou Diallo in 2000, and then writing, producing, and starring in a short film titled 'The Day,' which was showcased later in New York City in 2002.",
+        image: '/images/content-background-bio-2.jpg',
+        date: '1992 - 2002',
         alt: 'Image of Dwyan Alford in a warehouse in Portland, OR'
     },
     {
         heading: 'Embracing Entrepreneurship in Botswana',
-        p1: 'In Gaborone, the capital city, Dwyan founded and ran a digital video production company. His work included producing and editing documentaries, corporate videos, music videos, and weddings.',
-        p2: 'As a business owner for nine years, Dwyan worked with notable clients including De Beers, Coca Cola, and Orange, expanding his global experiences.',
-        image: '/images/bio-image1.jpg',
-        date: '2003-2012',
+        p1: "Just as the Covid-19 pandemic has redefined our lives recently, 9/11 was a day that reshaped the world, leaving an indelible mark on our collective memory. This overwhelming sense of uncertainty and the seismic shift in global perceptions stirred a profound change in Dwyan. It led him to leave the familiarity of the U.S. behind and embark on a new chapter abroad in Botswana, Africa where his mother retired several years earlier.",
+        p2: 'By 2003, Dwyan found himself in Gaborone, Botswana, where he owned a digital video production company. Here, he crafted stories through his lens. As a business owner Dwyan worked with notable clients including De Beers, Coca Cola, The Bill and Melina Gates Foundation, Orange and many others, expanding his global experiences, wearing a number of hats at various times as Producer, Director, Editor and/or Camera Operator.',
+        p3: "As the new decade came into focus, it became clear to Dwyan that the Internet was the future. He started to learn software development initially through using Content Management Systems (SMS) such as Wordpress and Joomla. This began his new found passion for coding and building applications from the ground up. He made arrangements to leave his career in video/film production and go fully into learning HTML, CSS and Javascript to build websites.",
+        image: '/images/content-background-bio-2.jpg',
+        date: '2002-2012',
         alt: 'Image of Dwyan Alford in a warehouse in Portland, OR'
     },
     {
-        heading: 'The Transition into Full-Stack Development',
-        p1: 'In 2017, Dwyan delved into full-stack web development at George Washington University. Building from ideas to reality reminded him of the satisfaction from his previous design and production roles.',
-        p2: 'Dwyan is dedicated to continually learning, especially AI tools. With global AI software market expected to reach $126 billion by 2025, Dwyan stays ahead, ready to utilize emerging technologies. (44 words)',
-        image: '/images/bio-image1.jpg',
-        date: '2017 - Present',
+        heading: 'The Internet was the Future',
+        p1: "In 2013, His return to the U.S. brought about a significant career transition. Working on a contract basis with clients such as the Institute for Public/Private Partnerships (IP3) in Arlington, VA. He pursued a certification in Full Stack Web Development at George Washington University's College of Professional Studies by 2017. His thirst for learning continued as he developed critical software skills at Revature, LLC in 2022.",
+        p2: "At Revature, Dwyan honed his proficiency in Test-Driven and Behavior-Driven Development, working with Java, Selenium, SQL, and Cucumber technologies. He developed and maintained high-quality, reliable software code, a clear extension of his creative abilities.",
+        p3: "Despite the twists and turns of his journey, or perhaps because of them, Dwyan Alford stands today as a seasoned professional, brimming with a multitude of skills and experiences. His story, just like his career, is dynamic, diverse, and continually evolving, much like the technological world he is part of. His past has perfectly equipped him for his future, turning him into the accomplished software developer he is today, ready to take on new challenges and opportunities.",
+        image: '/images/content-background-bio-2.jpg',
+        date: '2013 - 2023',
         alt: 'Image of Dwyan Alford in a warehouse in Portland, OR'
     },
 ];
