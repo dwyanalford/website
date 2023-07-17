@@ -1,16 +1,15 @@
 // components/Biography.js
 import Image from "next/image";
-import styles from '@/styles/Biography.module.css';
 import bioData from "@/data/bioData";
 
 const Biography = () => {
     return (
         <>
             {bioData.map((data, index) => (
-                <div key={index} className="flex w-full bg-center bg-cover overflow-hidden lg:p-10" style={{backgroundImage: `url(${data.image})`}}>
+                <div key={index} className="flex w-full overflow-hidden lg:p-10">
                     <div className="content-container lg:gap-2">
-                        <div className="w-full p-4 md:flex-1 2xl:pl-[125px]">
-                            <div className='max-w-lg leading-7 text-justify'>
+                        <div className="w-full p-4 flex  justify-center xl:justify-end md:flex-1">
+                            <div className='max-w-xl leading-7 text-justify p-4'>
                                 <h4 className='font-bold text-3xl pt-8 pb-3'>{data.heading}</h4>
                                 <p className='text-3xl'>{data.date}</p>
                                 
@@ -20,18 +19,18 @@ const Biography = () => {
                                 <p className='pt-8'>{data.p3}</p>
                             </div>
                         </div>
-                        {/* <div className='w-full md:flex-1'>
-                            <div className=''>
-                                <div className=''>
-                                    <Image 
-                                        src={data.image} 
-                                        alt={data.alt} 
-                                        width={600} 
-                                        height={800} 
-                                    />
-                                </div>
+                        <div className='w-full xl:flex-1'>
+                            <div className='p-3'>
+                                <Image 
+                                    src={data.image} 
+                                    alt={data.alt} 
+                                    width={600} 
+                                    height={800} 
+                                    className="mx-auto xl:mx-0 rounded-md shadow-md"
+                                />
                             </div>
-                        </div> */}
+                        </div>
+                    
                     </div>
                 </div>
 
@@ -42,3 +41,5 @@ const Biography = () => {
 }
 
 export default Biography;
+
+// style={{backgroundImage: `url(${data.image})`}}
