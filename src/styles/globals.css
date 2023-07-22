@@ -367,7 +367,7 @@
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
-  .hero-item {
+  .hero-item, .education-item {
     animation: scaleUp 15s infinite ease-in-out; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -406,8 +406,14 @@
   }
 
   .content-container {
-    @apply flex flex-wrap w-full p-1 gap-3;
+    @apply flex flex-wrap w-full gap-3;
   }
+
+}
+
+.education-opacity {
+  background-color: #D4DDDF;
+  background-color: rgba(255, 255, 255, 0.85);
 
 }
 
