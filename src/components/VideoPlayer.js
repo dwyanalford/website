@@ -10,11 +10,20 @@ function VideoPlayer({ videoId, caption }) {
         alt={caption}
         title={caption}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        className=""
+        className="video-player mx-auto"
     ></iframe>
 
 
-      <p className="">{caption}</p>
+      <p className='text-center pt-4'>{caption}</p>
+      <style jsx>{`
+      @media screen and (max-width: 560px) {
+        .video-player {
+          width: 400px;
+          height: 244px;
+        }     
+      }
+        
+      `}</style> 
     </div>
   );
 }

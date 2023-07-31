@@ -8,13 +8,13 @@ const Projects = () => {
   return (
     <>
       {projectsData.map((project, index) => (
-        <section key={index} className="flex w-full mb-5 xl:p-6">
-          <div className="projects-container flex flex-wrap w-full gap-3 p-2 blue">
-            <div className='projects-item-1 p-6 lg:flex-1 mx-auto orange'>
-              <div className='projects-summary p-6 mx-auto max-w-2xl green'>
+        <section key={index} className="flex w-full mb-5 xl:p-6 lg:mt-9">
+          <div className="projects-container flex flex-wrap w-full gap-3 p-2 lg:mb-7 sm:shadow-lg hover:shadow-xl">
+            <div className='projects-item-1 lg:p-6 lg:flex-1 mx-auto'>
+              <div className='projects-summary lg:p-6 mx-auto max-w-2xl'>
                 <h1 className='font-bold p-3 text-2xl'>
-                  {project.title}<br></br>
-                  <span className='bg-green-400 text-sm p-2'>
+                  {project.title}
+                  <span className='grey-highlight text-base ml-4'>
                     {project.type}
                   </span>
                 </h1>
@@ -34,33 +34,30 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="projects-item-2 lg:p-4 w-full lg:flex-1 red">
-              {project.videoId ? (
-                <VideoPlayer videoSrc={project.videoId} caption={project.caption} />
-              ) : (
-                <Image
-                  src={project.backupImage}
-                  alt="Backup Image"
-                  className='mx-auto'
-                  width={400} 
-                  height={100}
-                />
-                
-              )}
+            <div className="projects-item-2 lg:p-4 w-full lg:flex-1">
+              <div className='p-3'>
+                {project.videoId ? (
+                  <VideoPlayer videoSrc={project.videoId} caption={project.caption} />
+                ) : (
+                  <Image
+                    src={project.backupImage}
+                    alt="Backup Image"
+                    className='mx-auto'
+                    width={560} 
+                    height={315}
+                  />
+                  
+                )}
 
-              <h3 className='p-2 text-center pt-8 pb-5'>Technologies Used:</h3>
-              <h4 className='p-2 text-center pb-5'>{project.technologies}</h4>
-              <div className='p-2 text-center pt-5 pb-8'>
-                <a className='button blue-button' href={project.link}>VIEW CODE BASE ON GITHUB</a>
+                <h3 className='p-2 text-center pt-8 pb-5'>Technologies Used:</h3>
+                <h4 className='p-2 text-center pb-5 text-xl font-semibold'>{project.technologies}</h4>
+                <div className='p-2 text-center pt-5 pb-8'>
+                  <a className='button blue-button' href={project.link}>VIEW CODE BASE ON GITHUB</a>
+                </div>
               </div>
             </div>
             <style jsx>{`
-                .projects-item-2 {
-                  background-image: url(${project.backdrop});
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  background-position: center;
-                }
+                
             `}</style> 
           </div>
         </section>
