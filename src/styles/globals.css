@@ -317,6 +317,10 @@
     @apply bg-emerald-700
   }
 
+  .grey {
+    @apply bg-gray-800
+  }
+
   /*******************************************************************   TEMPLATE - SECTION, CONTAINERS, AND ITEMS  *********************/
   
   .header {
@@ -408,12 +412,6 @@
   .content-container {
     @apply flex flex-wrap w-full gap-3;
   }
-
-}
-
-.education-opacity {
-  background-color: #D4DDDF;
-  background-color: rgba(255, 255, 255, 0.85);
 
 }
 
