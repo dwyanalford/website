@@ -13,6 +13,7 @@ const projectsData = [
       caption: null,
       responsibilities: [],
       backupImage: "/images/project-3.jpg",
+      backdrop: "/images/projects-backdrop-port.jpg",
     },
     {
       title: "Stacks on Stacks Capstone",
@@ -31,6 +32,7 @@ const projectsData = [
         "Automated black-box testing for website's Products Controller API endpoints.",
       ],
       backupImage: "/images/project-2.jpg",
+      backdrop: "/images/projects-backdrop-stacks.jpg",
     },
     {
         title: "MicroBlaug - Microblogging Site",
@@ -51,6 +53,7 @@ const projectsData = [
           "Documented in reports (RTM, Test Case Design Document, and Defect Reports).",
         ],
         backupImage: "/images/project-1.jpg",
+        backdrop: "/images/projects-backdrop-micro.jpg",
       },
       {
         title: "BugCatcher",
@@ -71,6 +74,7 @@ const projectsData = [
           "Presented the final results, demonstrating automated testing and addressing questions from a panel.",
         ],
         backupImage: "/images/project-4.jpg",
+        backdrop: "/images/projects-backdrop-bug.jpg",
       },
     ];
     
