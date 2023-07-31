@@ -413,6 +413,10 @@
     @apply flex flex-wrap w-full gap-3;
   }
 
+  .grey-highlight {
+    @apply bg-slate-800 p-2 text-gray-200 rounded-lg;
+  }
+
 }
 
   

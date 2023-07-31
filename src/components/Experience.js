@@ -21,7 +21,7 @@ const Experience = () => {
                 <h1 className='font-bold text-2xl pb-2 pt-6'>{exp.title}</h1>
                 <h2 className='font-semibold text-xl pb-2'>Company: {exp.company}</h2>
                 <h4 className='text-lg pb-4'>{exp.workDates}</h4>
-                <h4 className='pb-6'>Type of work:&nbsp;<span className=' bg-slate-800 p-2 text-gray-200 rounded-lg'>{exp.workType}</span></h4>
+                <h4 className='pb-6'>Type of work:&nbsp;<span className='grey-highlight'>{exp.workType}</span></h4>
                 <h3 className='pb-3 pt-2'>Tasks:</h3>
                 <p className='flex flex-col mb-2'>
                   {exp.tasks.map((task, index) => (
