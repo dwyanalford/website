@@ -8,16 +8,15 @@ const Education = () => {
 
   return (
     <>
-      <div className='mt-[50px]'>
+      <div className='mt-[90px]'>
       {sortedEducationData.map((item, index) => (
-        <section key={index} className="flex w-full pb-4 md:p-4 lg:p-10 max-h-auto md:h-screen">
-            <div className="content-container md:p-4 lg:gap-2 overflow-hidden">
+        <section key={index} className="flex w-full max-h-auto md:h-screen">
+            <div className="flex flex-wrap w-full gap-3 overflow-hidden md:p-4 md:mb-[50px]">
               
-              <div className="w-full bg-center bg-cover p-8 rounded-lg"
-              style={{ backgroundImage: `url(${item.images.showcase})`}}
+              <div className="education-background w-full bg-center bg-cover p-8 rounded-lg"
               >
               
-                <div className='education-opacity p-4 lg:p-8 max-w-lg mx-auto md:mt-[30%] lg:mt-[0px] bg-white shadow-xl rounded-t-lg bg-center bg-cover'
+                <div className="education-opacity p-4 lg:p-8 max-w-lg mx-auto lg:mt-[0px] bg-white shadow-xl rounded-t-lg"
                 style={{ backgroundImage: `url(${item.images.schoolBackground})`}}
                 >{item.images.logo && <Image src={item.images.logo} alt={`${item.logo} logo`} width={150} height={100} 
                 className='mx-auto rounded-lg shadow-lg'/> }</div>
@@ -33,23 +32,19 @@ const Education = () => {
                   <p><strong>Website:</strong> <a className='underline text-lg text-blue-400 hover:text-blue-600' href={item.website} target='_blank'>{item.short}</a></p>
                 </div>  
               </div> 
-              
-    
-              
-              {/* <div className="p-4 w-full md:flex-1" >
-                 <div>
-                 <div className=''>
-                  
-                  <h2>{item.school}</h2>
-                  <h3>{item.title}</h3>
-                  <p>{item.startDate} - {item.endDate}</p>
-                  <p><strong>Area of focus:</strong> {item.details}</p>
-                  <p><strong>Type:</strong> {item.type}</p>
-                  <p><strong>Location:</strong> {item.location}</p>
-                </div>  
-                  </div> 
-              </div> */}
-            </div>  
+            </div> 
+            <style jsx>{`
+        @media (min-width: 768px) { 
+          .education-background {
+            background-image: url(${item.images.showcase});
+            background-repeat: no-repeat;
+          }
+          .education-opacity {
+            background-color: #D4DDDF;
+            /* background-color: rgba(255, 255, 255, 0.85); */
+          }
+        }
+      `}</style> 
         </section>
       ))}
       </div>
