@@ -34,7 +34,7 @@ const experienceData = [
       },
       {
         company: 'Wax and Oils',
-        title: 'Web Developer',
+        title: 'Frontend Web Developer',
         workDates: 'Jun 2014 - Jul 2017',
         workType: 'Onsite',
         tasks: [
@@ -48,8 +48,8 @@ const experienceData = [
         alt: 'Wax and Oils company screenshot of website home page in 2023',
       },
       {
-        company: 'Care Team Health',
-        title: 'Web Developer (Wordpress)',
+        company: 'CareTeam Health',
+        title: 'Frontend Web Developer',
         workDates: 'Nov 2017 - Mar 2021',
         workType: '100% Remote',
         tasks: [
