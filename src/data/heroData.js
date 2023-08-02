@@ -13,8 +13,8 @@ const heroData = [
           tablet: { ...tablet, url: "/images/home-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/home-image-mobile.jpg" },
         },
-        title: "Dwyan is a",
-        subTitle: "creative problem solver with a penchant for turning ideas into reality.",
+        title: "Dwyan",
+        subTitle: "A creative problem-solver skilled in the art of transforming ideas into reality.",
         color: "white",
         text: ""
       },
@@ -47,8 +47,8 @@ const heroData = [
           tablet: { ...tablet, url: "/images/experience-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/experience-image-mobile.jpg" },
         },
-        title: "Continuous Learning",
-        subTitle: "Always learning new ways of being more productive.",
+        title: "Communicate",
+        subTitle: "My work experience has been about telling a story, conveying information, and facilitating interaction.",
         color: "black",
         text: ""
       },
@@ -65,7 +65,7 @@ const heroData = [
           mobile: { ...mobile, url: "/images/biography-image-mobile.jpg" },
         },
         title: "An Interesting Fact About Me",
-        subTitle: "At 15 years old, I had already lived and went to school in six different countries.",
+        subTitle: "I lived and went to school in 6 different countries by the time I was 14 years old.",
         color: "white",
         text: ""
       },
@@ -98,8 +98,8 @@ const heroData = [
           tablet: { ...tablet, url: "/images/projects-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/projects-image-mobile.jpg" },
         },
-        title: "What am I building now?",
-        subTitle: "See my latest project below as well as past projects.",
+        title: "Most Recent Projects",
+        subTitle: "Continuously learning and integrating new technologies like chatGPT and other AI tools.",
         color: "black",
         text: ""
       },
