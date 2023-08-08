@@ -47,8 +47,8 @@ const heroData = [
           tablet: { ...tablet, url: "/images/experience-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/experience-image-mobile.jpg" },
         },
-        title: "Communicate",
-        subTitle: "My work experience has been about telling a story, conveying information, and facilitating interaction.",
+        title: "Coding, Collaboration, and Creativity",
+        subTitle: "Discover my work, I've crafted web experiences that deliver solutions tailored to users' needs.",
         color: "black",
         text: ""
       },
