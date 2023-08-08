@@ -23,15 +23,14 @@ const Experience = () => {
                 <h4 className='text-lg pb-4'>{exp.workDates}</h4>
                 <h4 className='pb-6'>Type of work:&nbsp;<span className='grey-highlight'>{exp.workType}</span></h4>
                 <h3 className='pb-3 pt-2'>Tasks:</h3>
-                <p className='flex flex-col mb-2'>
+                <div className='flex flex-col mb-2'>
                   {exp.tasks.map((task, index) => (
-                    <p key={index} className='mb-6'>
-                    <FaCheck className='text-green-500 inline-block mr-1'/> {task}
-                  </p>
-                  
-                  
+                    <div key={index} className='mb-6'>
+                      <FaCheck className='text-green-500 inline-block mr-1'/> {task}
+                    </div>
                   ))}
-                </p>
+                </div>
+
               </div>
             </div>
             <div className="w-full lg:flex-1 p-2 rounded-lg">
