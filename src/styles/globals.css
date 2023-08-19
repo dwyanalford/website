@@ -298,6 +298,21 @@
     }
   }
 
+  /****************************************************  CUSTOM SHADOWS */
+  .custom-shadow-top-white {
+    box-shadow: 0px -10px 15px -3px rgba(255, 255, 255, 0.5), 0px -4px 6px -2px rgba(255, 255, 255, 0.2);
+  }
+
+  .custom-shadow-left-white {
+    box-shadow: -10px 0px 15px -3px rgba(255, 255, 255, 0.4), -4px 0px 6px -2px rgba(255, 255, 255, 0.2);
+  }
+
+  .custom-shadow-right-white {
+    box-shadow: 10px 0px 15px -3px rgba(255, 255, 255, 0.4), 4px 0px 6px -2px rgba(255, 255, 255, 0.2);
+  }
+
+
+
   /****************************************************   TEMPLATE - BACKGROUND COLORS for <divs> to see on /template page on frontend */
 
   .red {
