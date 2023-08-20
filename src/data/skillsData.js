@@ -2,7 +2,7 @@ const skillsData = [
     {
       category: "Programming Languages",
       technologies: [
-        { name: "Java", experience: 1 },
+        { name: "Java", experience: 2 },
         { name: "JavaScript", experience: 5 },
       ],
     },
@@ -21,7 +21,7 @@ const skillsData = [
         { name: "PostgreSQL", experience: 1 },
         { name: "MongoDB", experience: 2 },
         { name: "DBeaver", experience: 1 },
-        { name: "Postman", experience: 3 },
+        { name: "Postman", experience: 4 },
         { name: "JBDC", experience: 1 },
         { name: "Javalin", experience: 1 },
       ],
@@ -29,7 +29,7 @@ const skillsData = [
     {
       category: "DevOps",
       technologies: [
-        { name: "Github", experience: 2 },
+        { name: "Git", experience: 4 },
         { name: "GCP", experience: 1 },
       ],
     },
@@ -38,14 +38,12 @@ const skillsData = [
       technologies: [
         { name: "CSS", experience: 5 },
         { name: "Flexbox", experience: 2 },
-        { name: "Maven", experience: 1 },
-        { name: "Node", experience: 3 },
+        { name: "Node", experience: 4 },
         { name: "Next", experience: 2 },
-        { name: "React", experience: 2 },
+        { name: "React", experience: 4 },
+        { name: "Maven", experience: 2 },
         { name: "Bootstrap", experience: 3 },
         { name: "WordPress", experience: 2 },
-        { name: "Shopify", experience: 2 },
-        { name: "Joomla", experience: 2 },
       ],
     },
   ];

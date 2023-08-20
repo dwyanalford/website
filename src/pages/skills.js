@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Hero from '@/components/Hero'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Skills from '@/components/Skills'
+import PageHeader from '@/components/PageHeader'
 
 export default function SkillsPage() {
   return (
@@ -17,6 +17,7 @@ export default function SkillsPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
+      <PageHeader title='Software Experience (Number of Years)'/>
         <Skills/>
       <Footer />
     </>
