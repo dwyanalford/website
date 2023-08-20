@@ -5,12 +5,11 @@ const Skills = () => {
   const maxExperience = 5;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.yAxis}><h4>Skill Level (Years of Experience)</h4></div>
+    <div className='flex flex-wrap p-6 space-y-6 gap-7'>
       {data.map((category) => (
-        <div key={category.category} className={styles.chartContainer}>
+        <div key={category.category} className='p-4 md:p-6 max-w-lg mx-auto shadow-md'>
           <div className={styles.chart}>
-            <div className={styles.xAxis}><h4>{category.category}</h4></div>
+            <div className={styles.xAxis}><h3>{category.category}</h3></div>
             {category.technologies.map((technology) => (
               <div
                 key={technology.name}
@@ -30,3 +29,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
+//images/midjourney-created-man-computer.jpg

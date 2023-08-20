@@ -1,29 +1,5 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    padding-top: 50px;
-    min-height: 100vh;
-    margin-top: 50px;
-    margin-left: 250px;
-    /* background-color:  var(--BgColorMain); */
-    background-color: var(--BgColorSecondary);
-  }
+/* styles/Skills.module.css */
 
-  .container h2 {
-    text-align: left;
-  }
-  
-  .chartContainer {
-    margin-bottom: 30px;
-  }
-  
-  .category {
-    margin: 0;
-    text-align: center;
-  }
-  
   .chart {
     display: flex;
     flex-wrap: wrap;
@@ -65,59 +41,50 @@
     font-size: 1rem;
     color: rgb(32, 32, 32);
     margin-bottom: 0.5rem;
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
     text-align: center;
   }
 
   .label2 {
     position: absolute;
-    top: -6rem;
+    top: -3rem;
     font-size: 1rem;
     color: rgb(32, 32, 32);
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
     text-align: center;
   }
   
   .yAxis {
     font-size: 1.2rem;
-    font-weight: bold;
     margin-bottom: 1rem;
     color: rgb(32, 32, 32);
   }
   
   .xAxis {
     font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     text-align: center;
     width: 100%;
+    /* background-color: rgb(249, 249, 249);
+    border-radius: 10px; */
   }
 
   @media screen and (max-width: 1048px) {
-    .bar {
+    /* .bar {
       width: 50px;
-    }
+    } */
   }
 
   @media screen and (max-width: 870px) {
-    .container {
-      margin-left: 130px;
-    }
     .bar{
-      width: 40px;
+      width: 50px;
     }
     .bar span {
-      transform: rotate(90deg);
-      text-align: left;
+      /* transform: rotate(90deg); */
+      /* text-align: left; */
     }
     .label2 {
-      top: -4rem;
-    }
-  }
-
-  @media screen and (max-width: 599px) {
-    .container {
-      margin-left: 100px;
+      /* top: -4rem; */
     }
   }
   
