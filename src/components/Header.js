@@ -11,9 +11,10 @@ import Nav from './Nav';
 const Header = () => {
   const { state, dispatch } = useContext(GlobalContext);
 
-  const handleClick = () => {
-    dispatch({ type: 'TOGGLE_OVERLAY' });
-  };
+  // const handleClick = () => {
+  //   dispatch({ type: 'TOGGLE_OVERLAY' });
+  // };
+  // pass "handleClick={handleClick}" in the sub component as a prop"
 
   const headerClass = state.isOverlayActive
     ? `${styles.headerContainer} ${styles.overlayActive}`
@@ -26,7 +27,7 @@ const Header = () => {
           <div className="header-item w-2/12 xl:w-1/12 p-4 text-center xl:hidden"><MobileMenu /></div>
           <div className="header-item w-7/12 xl:w-2/12 p-4 text-center justify-center"><Avatar /></div>
           <div className="header-item text-center hidden xl:flex xl:w-7/12 xl:p-4 justify-center"><Nav className="navInstance2" dataId="nav2" /></div>
-          <div className="header-item w-3/12 xl:w-2/12 p-4 text-center flex justify-center"><NavButton handleClick={handleClick} /></div>
+          <div className="header-item w-3/12 xl:w-2/12 p-4 text-center flex justify-center"><NavButton /></div>
         </div>
       </section>
       <Contact isVisible={state.isOverlayActive} />
