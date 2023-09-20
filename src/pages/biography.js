@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import MobileMenu from '@/components/MobileMenu'
-import Content from '@/components/Content'
 import Hero from '@/components/Hero'
 import Biography from '@/components/Biography'
 import Footer from '@/components/Footer'

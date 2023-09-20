@@ -14,7 +14,7 @@ const Experience = () => {
   return (
     <>
       {sortedExperienceData.map((exp, index) => (
-        <section key={index} className="flex w-full p-2 lg:p-10">
+        <section id='Experience' key={index} className="flex w-full p-2 lg:p-10">
           <div className="experience-container flex flex-wrap w-full p-4 sm:shadow-lg hover:shadow-xl">
             <div className="lg:flex-1 mx-auto p-4">
               <div className="experience-text p-8 mx-auto rounded-lg max-w-lg md:max-w-2xl lg:max-w-lg">
