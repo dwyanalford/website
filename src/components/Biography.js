@@ -6,7 +6,7 @@ const Biography = () => {
     return (
         <>
             {bioData.map((data, index) => (
-                <div key={index} className="flex w-full overflow-hidden lg:p-10">
+                <div key={index} id="Biography" className="flex w-full overflow-hidden lg:p-10">
                     <div className="content-container lg:gap-2">
                         <div className="w-full p-4 flex  justify-center xl:justify-end md:flex-1">
                             <div className='max-w-xl leading-7 text-justify p-4'>

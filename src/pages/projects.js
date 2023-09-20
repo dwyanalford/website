@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       </Head>
       <Header/>
       <Hero pageName="Projects" />
-      <Projects />
+      <Projects/>
       <Footer />
     </>
   )

@@ -18,7 +18,7 @@ export default function ExperiencePage() {
       </Head>
       <Header/>
       <Hero pageName="Experience" />
-      <Experience />
+      <Experience id="Experience" />
       <Footer />
     </>
   )

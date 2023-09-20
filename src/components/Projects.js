@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       {projectsData.map((project, index) => (
-        <section key={index} className="flex w-full mb-5 xl:p-6 lg:mt-9">
+        <section key={index} id='Projects' className="flex w-full mb-5 xl:p-6 lg:mt-9">
           <div className="projects-container flex flex-wrap w-full p-2 lg:pb-12 sm:shadow-lg hover:shadow-xl">
             <div className='projects-item-1 lg:p-6 lg:flex-1 mx-auto rounded-xl'>
               <div className='projects-summary mx-auto max-w-2xl pl-4 custom-shadow-left-white'>

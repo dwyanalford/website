@@ -13,7 +13,7 @@ const heroData = [
           tablet: { ...tablet, url: "/images/home-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/home-image-mobile.jpg" },
         },
-        title: "Dwyan",
+        title: "Discovering Dwyan",
         subTitle: "A creative problem-solver skilled in the art of transforming ideas into reality.",
         color: "white",
         text: ""
@@ -47,8 +47,8 @@ const heroData = [
           tablet: { ...tablet, url: "/images/experience-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/experience-image-mobile.jpg" },
         },
-        title: "",
-        subTitle: "Discover my work, I've crafted web experiences that deliver solutions tailored to users' needs.",
+        title: "Professional Journey",
+        subTitle: "Elevating User Experiences through Code. Turning Ideas into Seamless Digital Solutions",
         color: "black",
         text: ""
       },
