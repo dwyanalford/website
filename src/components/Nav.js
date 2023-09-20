@@ -35,13 +35,15 @@ const Nav = ({ className, dataId }) => {
       <ul className='flex p-2 xl:gap-7'>
         {sortedMenuLinks.map(({ href, text }) => {
           const isActive = router.pathname === href;
-          const linkClassName = isActive ? '.activeLink' : '';
+          const linkClassName = isActive ? 'activeLink' : '';
 
           return (
             <li key={href} className='flex'>
-              <Link href={href} className={`${linkClassName} button grey-button flex gap-2 xl:gap-2`}>
-                <p className='self-center'>{getIconByMenuLinkText(text)}</p>
-                <p className='self-center'>{text}</p>
+              <Link href={href}>
+                <div className={`button grey-button flex gap-2 xl:gap-2 ${linkClassName}`}>
+                  <p className='self-center'>{getIconByMenuLinkText(text)}</p>
+                  <p className='self-center'>{text}</p>
+                </div>
               </Link>
             </li>
           );
