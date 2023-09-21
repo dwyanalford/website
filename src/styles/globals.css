@@ -79,7 +79,7 @@
   }
 
   .activeLink {
-    @apply text-slate-600 font-semibold border-2 border-blue-500 shadow-xl bg-slate-300;
+    @apply text-black font-semibold border-2 border-blue-500 shadow-xl bg-slate-200;
   }
 
   /* -----------------------------   Desktop Menu */
