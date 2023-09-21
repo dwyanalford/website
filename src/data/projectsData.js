@@ -1,17 +1,25 @@
 const projectsData = [
     {
-      title: "My Portfolio Site",
+      title: "Digital Canvas: Web Portfolio",
       type: "Individual Project",
       buttonColor: "button-gold",
-      date: "Current",
+      date: "June 2023",
       descriptions: [
         "I built my portfolio website to showcase my skills as a Frontend Web Developer, this is just an informational app for now, so no need for databases or backend servers. Please note, I did import all the data into each page dynamically, fetching data from data files.",
       ],
-      technologies: "NextJS, ReactJS, JSX, Node, Vanilla CSS Flexbox for styling, GIT, Github, Vercel.",
+      technologies: "The portfolio Frontend site was created using Next.js, React, Tailwind CSS, React Icons, React Router, JavaScript (ES6+), CSS Variables, Media Queries, JavaScript Objects, Data Files, Vercel for deployment and hosting, smooth scrolling animations, conditional rendering, scroll animations, meta tags, structured data, custom React components, and Next.js routing.",
       link: "",
       videoId: null,
       caption: null,
-      responsibilities: [],
+      responsibilities: [
+        "Next.js: Leveraged Next.js, a React framework, to build a fast and SEO-friendly single-page application that enhances user experience.",
+        "Responsive Design: Using media queries and Tailwind CSS classes for optimal user experience across devices.",
+        "Dynamic Content: Allowing easy updates and addition of new projects, experiences, and sections without code changes.",
+        "Data Management: Organized and managed data with JavaScript objects",
+        "Scroll Animations: Added scroll animations for the 'Read More' button, providing a visually appealing and user-friendly experience.",
+        "Smooth Deployment: Deployed the site smoothly using platforms like Vercel",
+        "And much more!"
+      ],
       backupImage: "/images/project-3.jpg",
       backdrop: "/images/projects-backdrop-port.jpg",
     },
@@ -19,7 +27,7 @@ const projectsData = [
       title: "Stacks on Stacks Capstone",
       type: "Team Project",
       buttonColor: "button-green",
-      date: "", 
+      date: "January 2023", 
       descriptions: [
         "We tested an e-Commerce app, using BDD with Selenium, Cucumber, and TestNG/Junit for front-end End to End tests. Backend endpoints were tested with Postman. Agile/Scrum methodologies were followed with Trello for sprint management",
       ],
@@ -38,7 +46,7 @@ const projectsData = [
         title: "MicroBlaug - Microblogging Site",
         type: "Team Project",
         buttonColor: "button-green",
-        date: "", // you will fill this out
+        date: "December 2022", // you will fill this out
         descriptions: [
           "The project tackles cluttered blogging sites. Users can sign up, log in, write posts, view/comment on others' posts, and see timestamps. The app is designed as a single-page application to enhance user experience. The backend handles user requests and updates the database for a seamless and interactive blogging experience.",
         ],
@@ -59,7 +67,7 @@ const projectsData = [
         title: "BugCatcher",
         type: "Individual Project",
         buttonColor: "button-gold",
-        date: "", // you will fill this out
+        date: "November 2022", // you will fill this out
         descriptions: [
           "Exciting news! Talented developers completed a prototype of a Test Case and Bug Reporting system. I will test the application and write automation tests to facilitate regression testing. Given a dev environment with API access, I'll address visual, logical bugs.",
         ],

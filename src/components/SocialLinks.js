@@ -4,12 +4,12 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const SocialLinks = () => {
   return (
-    <div className="flex items-center space-x-1">
-      <a href="https://github.com">
-        <FaGithub className="text-xl text-gray-800 hover:text-gray-600 transition-colors duration-200" />
+    <div className="flex space-x-8 justify-center">
+      <a href="https://github.com/dwyanalford" target='_blank'>
+        <FaGithub className="text-2xl text-gray-800 hover:text-gray-600 transition-colors duration-200" />
       </a>
-      <a href="https://linkedin.com">
-        <FaLinkedin className="text-xl text-blue-600 hover:text-blue-500 transition-colors duration-200" />
+      <a href="https://www.linkedin.com/in/dwyanalford/" target='_blank'>
+        <FaLinkedin className="text-2xl text-blue-600 hover:text-blue-500 transition-colors duration-200" />
       </a>
     </div>
   );

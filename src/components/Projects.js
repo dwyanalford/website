@@ -8,16 +8,18 @@ const Projects = () => {
   return (
     <>
       {projectsData.map((project, index) => (
-        <section key={index} id='Projects' className="flex w-full mb-5 xl:p-6 lg:mt-9">
-          <div className="projects-container flex flex-wrap w-full p-2 lg:pb-12 sm:shadow-lg hover:shadow-xl">
+        <section key={index} id='Projects' className="flex w-full mb-5 xl:p-6">
+          <div className="projects-container flex flex-wrap w-full p-2 pt-10 lg:pb-12 sm:shadow-lg hover:shadow-xl">
             <div className='projects-item-1 lg:p-6 lg:flex-1 mx-auto rounded-xl'>
               <div className='projects-summary mx-auto max-w-2xl pl-4 custom-shadow-left-white'>
-                <h1 className='font-bold p-3 text-2xl'>
-                  {project.title}
-                  <span className='grey-highlight text-base ml-4'>
+                <div className='flex'>
+                  <h1 className='font-bold p-3 text-2xl'>
+                    {project.title}
+                  </h1>
+                  {/* <p className='grey-highlight p-3'>
                     {project.type}
-                  </span>
-                </h1>
+                  </p> */}
+                </div>
                 {project.descriptions.map((description, index) => (
                   <p className='p-3' key={index}>{description}</p>
                 ))}
@@ -34,7 +36,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="projects-item-2 w-full lg:flex-1 rounded-xl">
+            <div className="projects-item-2 w-full lg:flex-1 rounded-xl custom-shadow-top-white bg-[#c9d1d3]">
               <div className='pro-container rounded-xl mx-auto max-w-2xl pt-5'>
                 {project.videoId ? (
                   <VideoPlayer videoId={project.videoId} caption={project.caption} />
@@ -52,10 +54,10 @@ const Projects = () => {
                 )}
                 
                   
-                  <div className='technologies-bg p-2 rounded-xl custom-shadow-top-white max-w-xl mx-auto mt-6'> 
+                  <div className='technologies-bg p-2 rounded-xl max-w-xl mx-auto mt-6'> 
                   <p className='pt-6 font-semibold max-w-lg mx-auto rounded-sm pb-6'>Video: {project.caption}</p>
                     <h3 className='p-2 pl-5 pt-10'>Technologies Used:</h3>
-                    <h4 className='pl-5 text-xl font-semibold'>{project.technologies}</h4>
+                    <h4 className='pl-5 text-xl'>{project.technologies}</h4>
                     <div className='p-2 text-center pt-5 pb-5 mt-4'>
                       <a className='button blue-button' href={project.link}>VIEW CODE BASE ON GITHUB</a>
                     </div>

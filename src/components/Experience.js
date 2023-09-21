@@ -33,8 +33,8 @@ const Experience = () => {
 
               </div>
             </div>
-            <div className="w-full lg:flex-1 p-2 rounded-lg">
-              <div className="rounded-lg overflow-hidden max-w-xl mx-auto lg:mt-[120px] xl:mt-[75px] shadow-lg hover:shadow-xl">
+            <div className="img-container w-full lg:flex-1 p-2 rounded-lg custom-shadow-top-white bg-[#c9d1d3]">
+              <div className="rounded-lg overflow-hidden max-w-xl mx-auto lg:mt-[120px] xl:mt-[75px] shadow-lg hover:shadow-xl bg-[#ffffff] p-4">
                 <Image
                   src={exp.imgSrc}
                   alt={exp.alt}
@@ -51,6 +51,9 @@ const Experience = () => {
             </div>
           </div>
           <style jsx>{`
+        .img-container {
+
+        }
         @media (min-width: 1024px) { 
           .experience-image-container {
             background-image: url(${exp.imgSrc});
