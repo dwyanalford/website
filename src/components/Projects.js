@@ -25,7 +25,7 @@ const Projects = () => {
                 ))}
                 {project.responsibilities.length > 0 && (
                   <>
-                    <h3 className='p-2 mt-[30px]'>Work completed:</h3>
+                    <h3 className='p-2 mt-[30px]'>Details:</h3>
                     {project.responsibilities.map((responsibility, index) => (
                       <ul key={index}>
                         <li className='p-4'><FaCheck className='text-green-500 inline-block mr-1'/>{responsibility}</li>

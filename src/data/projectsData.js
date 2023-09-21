@@ -5,12 +5,12 @@ const projectsData = [
       buttonColor: "button-gold",
       date: "June 2023",
       descriptions: [
-        "I built my portfolio website to showcase my skills as a Frontend Web Developer, this is just an informational app for now, so no need for databases or backend servers. Please note, I did import all the data into each page dynamically, fetching data from data files.",
+        "Each line of code, every design element, and the careful selection of tools play a pivotal role in shaping this online presence. I'm thrilled to unveil the inner workings of my portfolio website. Join me as we dissect the technologies that power this digital canvas",
       ],
       technologies: "The portfolio Frontend site was created using Next.js, React, Tailwind CSS, React Icons, React Router, JavaScript (ES6+), CSS Variables, Media Queries, JavaScript Objects, Data Files, Vercel for deployment and hosting, smooth scrolling animations, conditional rendering, scroll animations, meta tags, structured data, custom React components, and Next.js routing.",
       link: "",
-      videoId: null,
-      caption: null,
+      videoId: 'SMgQMSyc3eE',
+      caption: 'Unveiling My Web Portfolio (7.57)',
       responsibilities: [
         "Next.js: Leveraged Next.js, a React framework, to build a fast and SEO-friendly single-page application that enhances user experience.",
         "Responsive Design: Using media queries and Tailwind CSS classes for optimal user experience across devices.",
