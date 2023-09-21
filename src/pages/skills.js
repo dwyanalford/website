@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Skills from '@/components/Skills'
 import PageHeader from '@/components/PageHeader'
+import Hero from '@/components/Hero'
 
 export default function SkillsPage() {
   return (
@@ -17,8 +18,9 @@ export default function SkillsPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
+      <Hero pageName="Skills" />
       <PageHeader title='Software Experience (Number of Years)'/>
-        <Skills/>
+      <Skills/>
       <Footer />
     </>
   )

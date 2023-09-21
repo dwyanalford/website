@@ -77,13 +77,13 @@ const heroData = [
     content: [
       {
         image: {
-          large: { ...largeDevice, url: "/images/skills-background.jpg" },
+          large: { ...largeDevice, url: "/images/skills-image-large.jpg" },
           tablet: { ...tablet, url: "/images/skills-image-tablet.jpg" },
           mobile: { ...mobile, url: "/images/skills-image-mobile.jpg" },
         },
-        title: "Skill Comes with Time and Practice",
-        subTitle: "See the breakdown of the technologies that I use.",
-        color: "black",
+        title: "Crafting Proficiency",
+        subTitle: "Explore the Palette of Skills That Shape My Digital Universe.",
+        color: "white",
         text: ""
       },
     ],

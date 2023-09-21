@@ -5,7 +5,7 @@ const Skills = () => {
   const maxExperience = 5;
 
   return (
-    <div className='flex flex-wrap p-6 space-y-6 gap-7'>
+    <div id="Skills" className='flex flex-wrap p-6 space-y-6 gap-7'>
       {data.map((category) => (
         <div key={category.category} className='p-4 md:p-6 max-w-lg mx-auto shadow-md'>
           <div className={styles.chart}>

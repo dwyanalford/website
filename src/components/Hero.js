@@ -31,6 +31,9 @@ const Hero = ({ pageName, scrollDuration = 500 }) => {
     case 'Projects':
       sectionId = 'Projects';
       break;
+    case 'Skills':
+      sectionId = 'Skills';
+      break;
     case 'Experience':
       sectionId = 'Experience';
       break;
